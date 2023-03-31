@@ -1,7 +1,7 @@
-# Личный проект «Мишка» 
+# Личный проект «Мишка»
 
-* Студент: [Константин Кушнир](https://up.htmlacademy.ru/adaptive/28/user/2269133).
-* Наставник: `Неизвестно`.
+- Студент: [Константин Кушнир](https://up.htmlacademy.ru/adaptive/28/user/2269133).
+- Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
