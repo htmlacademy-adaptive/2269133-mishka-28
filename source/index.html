@@ -1,12 +1,141 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Главная страница: Мишка</title>
+</head>
 
-  </body>
+<body>
+
+  <!-- Хедер -->
+  <header class="header">
+
+    <!-- Логотип "Мишек" в навигации -->
+    <a class="header__logo header-logo-link" href="#">
+      <img class="header-logo-link__logo-navigation" src="" width="" height="" alt="">
+    </a>
+    <button class="header__button button" type="button">Закрыть-открыть меню</button>
+
+    <!-- Навигация -->
+    <nav class="header-navigation">
+      <a class="header-navigation__link" href="catalog.html">Каталог товаров</a>
+      <a class="header-navigation__link" href="form.html">Вязание на заказ</a>
+      <a class="header-navigation__link header-navigation__link--search" href="#">
+        <span class="visually-hidden">Поиск по сайту</span>
+      </a>
+      <a class="header-navigation__link header-navigation__link--basket" href="#">
+        <span class="header-navigation__desc">Корзина: пока пуста</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Оглавление -->
+  <main class="main">
+    <section class="main-header">
+      <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+      <a class="main-header__desc main-header__desc--promotions" href="#">Новые поступления</a>
+      <a class="main-header__desc main-header__desc--promotions" href="#">Распродажа</a>
+      <span class="main-header__text">Бесплатная доставка по России</span>
+      <div class="main-header__wrapper">
+        <a class="main-header__sorting sorting" href="#">
+          <span class="sorting__desc">Предметы интерьера</span>
+        </a>
+        <a class="main-header__sorting sorting" href="#">
+          <span class="sorting__desc">Детские игрушки</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Рекомендуемый товар-->
+    <section class="featured">
+      <h2 class="featured__title">Вязаные корзинки</h2>
+      <b class="featured__subtitle">ТОВАР НЕДЕЛИ</b>
+      <p class="featured__discription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
+        размерах.</p>
+      <div class="featured__list options">
+        <span class="featured__options">Цвет:</span>
+        <span class="featured__options">Диаметр:</span>
+        <span class="featured__options">Высота:</span>
+      </div>
+      <div class="featured__list parameter">
+        <span class="featured__parameter">тиффани/серый</span>
+        <span class="featured__parameter">25 см</span>
+        <span class="featured__parameter">15 см</span>
+      </div>
+      <img class="featured__image" src="" width="" height="" alt="">
+      <b class="featured__price">Цена: 990 руб.</b>
+      <button class="featured__button button">ЗАКАЗАТЬ</button>
+    </section>
+
+    <!-- Коротко о нас -->
+    <section class="about">
+      <h2 class="about__title">Коротко о нас:</h2>
+      <p class="about__discription">Экологически чистые материалы</p>
+      <p class="about__discription">Скандинавский стиль по российской цене</p>
+      <p class="about__discription">Увеличивает лайки на фотографиях</p>
+      <p class="about__discription">Связано вручную с любовью и умилением</p>
+      <p class="about__discription">Поддержка отечественного производителя</p>
+      <p class="about__discription">Поставляется в подарочной упаковке</p>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
+      <div class="reviews__list">
+        <blockquote class="reviews__item">
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="reviews__autor-name">Анастасия Красильникова @misssssiskras</cite>
+        </blockquote>
+      </div>
+      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+      <button class="reviews__next" type="button">Следующий отзыв</button>
+      <button class="reviews__button button" type="button">НАПИСАТЬ</button>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <img class="contacts__image" src="" width="" height="" alt="">
+      <p class="contacts__email-label">e-mail</p>
+      <p class="contacts__email">info@mimimishkashop.ru</p>
+      <p class="contacts__adres">адрес</p>
+      <p class="contacts__text">анкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+      <button class="contacts__button button" type="button">НАПИШИТЕ НАМ</button>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+
+      <!-- Логотип "Мишек" в подвале -->
+      <section class="footer-logo">
+        <h3 class="footer-logo__tiile visually-hidden">Логотип подвала</h3>
+        <a class="footer-logo__link link-logo" href="#">
+          <img class="link-logo__logo" src="" width="" height="" alt="">
+        </a>
+      </section>
+
+      <!-- Социальные сети -->
+      <section class="social">
+        <h3 class="social__tiile visually-hidden">Социальные сети</h3>
+        <a class="social__vk" href="#">VK</a>
+        <a class="social__You-Tube" href="#">You-Tube</a>
+        <a class="social__Telegram" href="#">Telegram</a>
+      </section>
+
+      <!-- Разработчики -->
+      <section class="developers">
+        <h3 class="developers__title">Разработано</h3>
+        <a class="developers__link developers-link-logo" href="#">
+          <img class="developers-link-logo__logo-htmlacademy" src="" width="" height="" alt="">
+        </a>
+      </section>
+    </footer>
+
+  </main>
+
+</body>
+
 </html>
