@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Форма заказа вязания на заказ: Мишка</title>
+  <base href="https://htmlacademy-adaptive.github.io/2269133-mishka-28/2/">
+</head>
+
+<body>
+
+  <!-- Хедер -->
+  <header class="header header-form">
+
+    <!-- Логотип "Мишек" в навигации -->
+    <a class="header__logo header-logo-link" href="index.html">
+      <img class="header-logo-link__logo-navigation" src="" width="" height="" alt="">
+    </a>
+    <button class="header__button button" type="button">Закрыть-открыть меню</button>
+
+    <!-- Навигация -->
+    <nav class="header-navigation">
+      <a class="header-navigation__link" href="catalog.html">Каталог товаров</a>
+      <a class="header-navigation__link" href="form.html">Вязание на заказ</a>
+      <a class="header-navigation__link header-navigation__link--search" href="#">
+        <span class="visually-hidden">Поиск по сайту</span>
+      </a>
+      <a class="header-navigation__link header-navigation__link--basket" href="#">
+        <span class="header-navigation__desc">Корзина: пока пуста</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Оглавление -->
+  <main class="main main-form">
+    <section class="main-header">
+      <h1 class="main-header__title">Вязание на заказ</h1>
+      <a class="main-header__desc main-header__desc--promotions" href="#">Новые поступления</a>
+      <a class="main-header__desc main-header__desc--promotions" href="#">Распродажа</a>
+      <span class="main-header__text">Бесплатная доставка по России</span>
+    </section>
+
+    <!-- Форма заказа -->
+    <section class="form-order">
+      <h2 class="form-order__title visually-hidden">Форма заказа вязания на заказ</h2>
+      <p class="form-order__discription">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
+        и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form-order__form" action="" method="get">
+
+        <!-- Заказ по типу -->
+        <fieldset class="form-sorting">
+          <legend class="form-sorting__title">ТИП</legend>
+          <input class="form-sorting__button visually-hidden" type="radio" name="radio-button" checked>
+          <span class="form-sorting__mark"></span>
+          <span class="form-sorting__label">Аксессуар для интерьера</span>
+          <input class="form-sorting__button visually-hidden" type="radio" name="radio-button">
+          <span class="form-sorting__mark"></span>
+          <span class="form-sorting__label">Детская игрушка</span>
+        </fieldset>
+
+        <!-- Заказ по цвету -->
+        <fieldset class="form-sorting">
+          <legend class="form-sorting__title">ЦВЕТ</legend>
+          <input class="form-sorting__button visually-hidden" type="checkbox" name="radio-button" checked>
+          <span class="form-sorting__mark"></span>
+          <span class="form-sorting__label">Белый</span>
+          <input class="form-sorting__button visually-hidden" type="checkbox" name="radio-button" checked>
+          <span class="form-sorting__mark"></span>
+          <span class="form-sorting__label">Серый</span>
+          <input class="form-sorting__button visually-hidden" type="checkbox" name="radio-button" checked>
+          <span class="form-sorting__mark"></span>
+          <span class="form-sorting__label">Тиффани</span>
+          <input class="form-sorting__button visually-hidden" type="checkbox" name="radio-button" checked>
+          <span class="form-sorting__mark"></span>
+          <span class="form-sorting__label">Черный</span>
+          <input class="form-sorting__button visually-hidden" type="checkbox" name="radio-button" checked>
+          <span class="form-sorting__mark"></span>
+          <span class="form-sorting__label">Розовый</span>
+          <input class="form-sorting__button visually-hidden" type="checkbox" name="radio-button" checked>
+          <span class="form-sorting__mark"></span>
+          <span class="form-sorting__label">Оранжевый</span>
+        </fieldset>
+
+        <!-- ФИО -->
+        <fieldset class="form-sorting">
+          <legend class="form-sorting__title">ФИО</legend>
+          <label class="form-sorting__value" for="form-sorting-name">Имя:</label>
+          <input class="form-sorting__input" placeholder="Введите ваше имя*" type="text" name="form-sorting-name"
+            id="form-sorting-name" required>
+          <label class="form-sorting__value" for="form-sorting-surname">Фамилия:</label>
+          <input class="form-sorting__input" placeholder="Укажите фамилию*" type="text" name="form-sorting-surname"
+            id="form-sorting-surname" required>
+          <label class="form-sorting__value" for="form-sorting-patronymic">Отчество:</label>
+          <input class="form-sorting__input" placeholder="Отчество, если желаете" type="text"
+            name="form-sorting-patronymic" id="form-sorting-patronymic">
+        </fieldset>
+
+        <!-- Телефон -->
+        <fieldset class="form-sorting">
+          <legend class="form-sorting__title">ТЕЛ</legend>
+          <label class="visually-hidden form-sorting__value" for="form-sorting-phone">Телефон:</label>
+          <input class="form-sorting__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="form-sorting-phone"
+            id="form-sorting-phone" required>
+        </fieldset>
+
+        <!-- E-mail -->
+        <fieldset class="form-sorting">
+          <legend class="form-sorting__title">E-MAIL</legend>
+          <label class="visually-hidden form-sorting__value" for="form-sorting-email">Электронная почта:</label>
+          <input class="form-sorting__input" placeholder="Ваш Email*" type="email" name="form-sorting-email"
+            id="form-sorting-email" required>
+        </fieldset>
+
+        <!-- Дополнения -->
+        <fieldset class="form-sorting">
+          <legend class="form-order__title">ДОП</legend>
+          <label class="visually-hidden form-sorting__value" for="form-sorting-wishes">Дополнения:</label>
+          <textarea class="form-sorting__coment" placeholder="Опишите все ваши пожелания к заказу" type="text"
+            name="form-sorting-wishes" id="form-sorting-wishes" rows="6">
+          </textarea>
+        </fieldset>
+
+        <!-- Текст в конце формы -->
+        <p class="form-text">*Поля обязательны для заполнения</p>
+
+        <!-- Кнопка в конце формы ОТПРАВИТЬ ЗАКАЗ -->
+        <button class="form-order__button button" type="button">ОТПРАВИТЬ ЗАКАЗ</button>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer footer-form">
+
+    <!-- Логотип "Мишек" в подвале -->
+    <section class="footer-logo">
+      <h3 class="footer-logo__title visually-hidden">Логотип подвала</h3>
+      <a class="footer-logo__link link-logo" href="#">
+        <img class="link-logo__logo" src="" width="" height="" alt="">
+      </a>
+    </section>
+
+    <!-- Социальные сети -->
+    <section class="social">
+      <h3 class="social__title visually-hidden">Социальные сети</h3>
+      <a class="social__vk" href="#">VK</a>
+      <a class="social__You-Tube" href="#">You-Tube</a>
+      <a class="social__Telegram" href="#">Telegram</a>
+    </section>
+
+    <!-- Разработчики -->
+    <section class="developers">
+      <h3 class="developers__title">Разработано</h3>
+      <a class="developers__link developers-link-logo" href="#">
+        <img class="developers-link-logo__logo-htmlacademy" src="" width="" height="" alt="">
+      </a>
+    </section>
+  </footer>
+
+
+</body>
+
+</html>
