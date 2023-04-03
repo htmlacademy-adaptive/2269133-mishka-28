@@ -13,7 +13,7 @@
 
     <!-- Логотип "Мишек" в навигации -->
     <a class="header__logo header-logo-link" href="#">
-      <img class="header-logo-link__logo-navigation" src="" width="" height="" alt="">
+      <img class="header-logo-link__logo-navigation" src="" width="" height="" alt="Логотип в навигации">
     </a>
     <button class="header__button button" type="button">Закрыть-открыть меню</button>
 
@@ -25,7 +25,7 @@
         <span class="visually-hidden">Поиск по сайту</span>
       </a>
       <a class="header-navigation__link header-navigation__link--basket" href="#">
-        <span class="header-navigation__desc">Корзина: пока пуста</span>
+        <span class="header-navigation__discription">Корзина: пока пуста</span>
       </a>
     </nav>
   </header>
@@ -34,38 +34,36 @@
   <main class="main">
     <section class="main-header">
       <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
-      <a class="main-header__desc main-header__desc--promotions" href="#">Новые поступления</a>
-      <a class="main-header__desc main-header__desc--promotions" href="#">Распродажа</a>
+      <a class="main-header__discription main-header__discription--promotions" href="#">Новые поступления</a>
+      <a class="main-header__discription main-header__discription--promotions" href="#">Распродажа</a>
       <span class="main-header__text">Бесплатная доставка по России</span>
       <div class="main-header__wrapper">
-        <a class="main-header__sorting sorting" href="#">
-          <span class="sorting__desc">Предметы интерьера</span>
+        <a class="main-header__sorting" href="#">
+          <span class="main-header__discription">Предметы интерьера</span>
         </a>
-        <a class="main-header__sorting sorting" href="#">
-          <span class="sorting__desc">Детские игрушки</span>
+        <a class="main-header__sorting" href="#">
+          <span class="main-header__discription">Детские игрушки</span>
         </a>
       </div>
     </section>
 
     <!-- Рекомендуемый товар-->
-    <section class="featured">
-      <h2 class="featured__title">Вязаные корзинки</h2>
-      <b class="featured__subtitle">ТОВАР НЕДЕЛИ</b>
-      <p class="featured__discription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
+    <section class="feature">
+      <h2 class="feature__title">Вязаные корзинки</h2>
+      <b class="feature__subtitle">ТОВАР НЕДЕЛИ</b>
+      <p class="feature__discription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
         размерах.</p>
-      <div class="featured__list options">
-        <span class="featured__options">Цвет:</span>
-        <span class="featured__options">Диаметр:</span>
-        <span class="featured__options">Высота:</span>
-      </div>
-      <div class="featured__list parameter">
-        <span class="featured__parameter">тиффани/серый</span>
-        <span class="featured__parameter">25 см</span>
-        <span class="featured__parameter">15 см</span>
-      </div>
-      <img class="featured__image" src="" width="" height="" alt="">
-      <b class="featured__price">Цена: 990 руб.</b>
-      <button class="featured__button button">ЗАКАЗАТЬ</button>
+      <dl class="feature-options">
+        <dt class="feature-options__options">Цвет:</dt>
+        <dd class="feature-options__parameter">тиффани/серый</dd>
+        <dt class="feature-options__options">Диаметр:</dt>
+        <dd class="feature-options__parameter">25 см</dd>
+        <dt class="feature-options__options">Высота:</dt>
+        <dd class="feature-options__parameter">15 см</dd>
+      </dl>
+      <img class="feature__image" src="" width="" height="" alt="">
+      <b class="feature__price">Цена: 990 руб.</b>
+      <button class="feature__button button">ЗАКАЗАТЬ</button>
     </section>
 
     <!-- Коротко о нас -->
@@ -90,9 +88,9 @@
           <cite class="reviews__autor-name">Анастасия Красильникова @misssssiskras</cite>
         </blockquote>
       </div>
-      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-      <button class="reviews__next" type="button">Следующий отзыв</button>
-      <button class="reviews__button button" type="button">НАПИСАТЬ</button>
+      <a class="reviews__prev" type="button">Предыдущий отзыв</a>
+      <a class="reviews__next" type="button">Следующий отзыв</a>
+      <a class="reviews__button button" type="button">НАПИСАТЬ</a>
     </section>
 
     <!-- Контакты -->
@@ -102,7 +100,7 @@
       <p class="contacts__email-label">e-mail</p>
       <p class="contacts__email">info@mimimishkashop.ru</p>
       <p class="contacts__adres">адрес</p>
-      <p class="contacts__text">анкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+      <p class="contacts__text">Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
       <button class="contacts__button button" type="button">НАПИШИТЕ НАМ</button>
     </section>
 
@@ -121,8 +119,8 @@
       <section class="social">
         <h3 class="social__tiile visually-hidden">Социальные сети</h3>
         <a class="social__vk" href="#">VK</a>
-        <a class="social__You-Tube" href="#">You-Tube</a>
-        <a class="social__Telegram" href="#">Telegram</a>
+        <a class="social__you-tube" href="#">You-Tube</a>
+        <a class="social__telegram" href="#">Telegram</a>
       </section>
 
       <!-- Разработчики -->
