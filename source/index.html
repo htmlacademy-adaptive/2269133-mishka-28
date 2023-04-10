@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Главная страница: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,21 +13,24 @@
   <header class="header">
 
     <!-- Логотип "Мишек" в навигации -->
-    <a class="header__logo header-logo-link" href="#">
-      <img class="header-logo-link__logo-navigation" src="" width="" height="" alt="Логотип в навигации">
+    <a class="header__logo logo logo--header" href="#">
+      <img class="logo__logo-navigation" src="" width="" height="" alt="Логотип в навигации">
     </a>
-    <button class="header__button button" type="button">Закрыть-открыть меню</button>
+    <a class="header__button" href="#">Закрыть-открыть меню</a>
 
     <!-- Навигация -->
     <nav class="header-navigation">
       <a class="header-navigation__link" href="catalog.html">Каталог товаров</a>
       <a class="header-navigation__link" href="form.html">Вязание на заказ</a>
+      <a class="header-navigation__link" href="#">Новые поступления</a>
+      <a class="header-navigation__link" href="#">Распродажа</a>
       <a class="header-navigation__link header-navigation__link--search" href="#">
-        <span class="visually-hidden">Поиск по сайту</span>
+        <span aria-label="Поиск по сайту"></span>
       </a>
       <a class="header-navigation__link header-navigation__link--basket" href="#">
         <span class="header-navigation__discription">Корзина: пока пуста</span>
       </a>
+      <span class="header-navigation__text">Бесплатная доставка по России</span>
     </nav>
   </header>
 
@@ -34,23 +38,16 @@
   <main class="main">
     <section class="main-header">
       <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
-      <a class="main-header__discription main-header__discription--promotions" href="#">Новые поступления</a>
-      <a class="main-header__discription main-header__discription--promotions" href="#">Распродажа</a>
-      <span class="main-header__text">Бесплатная доставка по России</span>
       <div class="main-header__wrapper">
-        <a class="main-header__sorting" href="#">
-          <span class="main-header__discription">Предметы интерьера</span>
-        </a>
-        <a class="main-header__sorting" href="#">
-          <span class="main-header__discription">Детские игрушки</span>
-        </a>
+        <a class="main-header__sorting" href="#">Предметы интерьера</a>
+        <a class="main-header__sorting" href="#">Детские игрушки</a>
       </div>
     </section>
 
     <!-- Рекомендуемый товар-->
     <section class="feature">
       <h2 class="feature__title">Вязаные корзинки</h2>
-      <b class="feature__subtitle">ТОВАР НЕДЕЛИ</b>
+      <h3 class="feature__subtitle">товар недели</h3>
       <p class="feature__discription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
         размерах.</p>
       <dl class="feature-options">
@@ -63,23 +60,33 @@
       </dl>
       <img class="feature__image" src="" width="" height="" alt="">
       <b class="feature__price">Цена: 990 руб.</b>
-      <button class="feature__button button">ЗАКАЗАТЬ</button>
+      <a class="feature__button button" href="#">заказать</a>
     </section>
 
     <!-- Коротко о нас -->
     <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
-      <p class="about__discription">Экологически чистые материалы</p>
-      <p class="about__discription">Скандинавский стиль по российской цене</p>
-      <p class="about__discription">Увеличивает лайки на фотографиях</p>
-      <p class="about__discription">Связано вручную с любовью и умилением</p>
-      <p class="about__discription">Поддержка отечественного производителя</p>
-      <p class="about__discription">Поставляется в подарочной упаковке</p>
+      <ul class="about__list">
+        <li class="about__item about__item--flower">Экологически чистые материалы</li>
+        <li class="about__item about__item--money">Скандинавский стиль по российской цене</li>
+        <li class="about__item about__item--heart">Увеличивает лайки на фотографиях</li>
+        <li class="about__item about__item--clew">Связано вручную с любовью и умилением</li>
+        <li class="about__item about__item--rocket">Поддержка отечественного производителя</li>
+        <li class="about__item about__item--present">Поставляется в подарочной упаковке</li>
+      </ul>
     </section>
 
     <!-- Отзывы -->
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
+      <div class="reviews__list reviews__list--current">
+        <blockquote class="reviews__item">
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="reviews__autor-name">Анастасия Красильникова @misssssiskras</cite>
+        </blockquote>
+      </div>
       <div class="reviews__list">
         <blockquote class="reviews__item">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
@@ -88,20 +95,28 @@
           <cite class="reviews__autor-name">Анастасия Красильникова @misssssiskras</cite>
         </blockquote>
       </div>
-      <a class="reviews__prev" type="button">Предыдущий отзыв</a>
-      <a class="reviews__next" type="button">Следующий отзыв</a>
-      <a class="reviews__button button" type="button">НАПИСАТЬ</a>
+      <div class="reviews__list">
+        <blockquote class="reviews__item">
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="reviews__autor-name">Анастасия Красильникова @misssssiskras</cite>
+        </blockquote>
+      </div>
+      <a class="reviews__prev" href="#">Предыдущий отзыв</a>
+      <a class=" reviews__next" href="#">Следующий отзыв</a>
+      <a class=" reviews__button button" href="#">написать</a>
     </section>
 
     <!-- Контакты -->
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
-      <img class="contacts__image" src="" width="" height="" alt="">
       <p class="contacts__email-label">e-mail</p>
       <p class="contacts__email">info@mimimishkashop.ru</p>
       <p class="contacts__adres">адрес</p>
       <p class="contacts__text">Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
-      <button class="contacts__button button" type="button">НАПИШИТЕ НАМ</button>
+      <img class="contacts__image" src="" width="" height="" alt="карта с нашим местоположением">
+      <a class="contacts__button button" href="#">напишите нам</a>
     </section>
 
     <!-- Подвал -->
@@ -109,25 +124,25 @@
 
       <!-- Логотип "Мишек" в подвале -->
       <section class="footer-logo">
-        <h3 class="footer-logo__tiile visually-hidden">Логотип подвала</h3>
-        <a class="footer-logo__link link-logo" href="#">
-          <img class="link-logo__logo" src="" width="" height="" alt="">
+        <h3 class="footer-logo__tiile" aria-label="Логотип подвала"></h3>
+        <a class="footer-logo__link logo logo--footer" href="#">
+          <img class="logo__logo-footer" src="" width="" height="" alt="логотип подвала">
         </a>
       </section>
 
       <!-- Социальные сети -->
       <section class="social">
-        <h3 class="social__tiile visually-hidden">Социальные сети</h3>
-        <a class="social__vk" href="#">VK</a>
-        <a class="social__you-tube" href="#">You-Tube</a>
-        <a class="social__telegram" href="#">Telegram</a>
+        <h3 class="social__tiile" aria-label="Социальные сети"></h3>
+        <a class="social__item social__item--vk" href="#">vk</a>
+        <a class="social__item social__item--you-tube" href="#">you-tube</a>
+        <a class="social__item social__item--telegram" href="#">telegram</a>
       </section>
 
       <!-- Разработчики -->
       <section class="developers">
         <h3 class="developers__title">Разработано</h3>
         <a class="developers__link developers-link-logo" href="#">
-          <img class="developers-link-logo__logo-htmlacademy" src="" width="" height="" alt="">
+          <img class="developers-link-logo__logo-htmlacademy" src="" width="" height="" alt="логотип html академии">
         </a>
       </section>
     </footer>
