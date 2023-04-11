@@ -13,10 +13,11 @@
   <header class="header header-catalog">
 
     <!-- Логотип "Мишек" в навигации -->
-    <a class="header__logo logo" href="#">
-      <img class="logo__logo-navigation" src="" width="" height="" alt="Логотип в навигации">
+    <a class="header__logo logo" href="index.html">
+      <img class="logo__logo-navigation" src="img/mishka-logo-header-mobile.svg" width="" height=""
+        alt="Логотип в навигации">
     </a>
-    <a class="header__button button" href="#">Закрыть-открыть меню</a>
+    <a class="header__button" href="#">Закрыть-открыть меню</a>
 
     <!-- Навигация -->
     <nav class="header-navigation">
@@ -36,37 +37,43 @@
 
   <!-- Оглавление -->
   <main class="main main-catalog">
-    <section class="main-header">
-      <h1 class="main-header__title">Каталог товаров</h1>
+    <section class="main-header-catalog">
+      <h1 class="main-header-catalog__title">Каталог товаров</h1>
     </section>
 
     <!-- Каталог товаров и карточки товаров -->
     <section class="catalog">
       <h1 aria-label="Каталог товаров"></h1>
       <div class="catalog__product-card">
-        <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
-        <img class="catalog__image" src="#" width="" height="" alt="игрушечный зайчик">
-        <p class="catalog__text">Рост 30 см, вес 200 г</p>
-        <span class="catalog__price">1 200 руб.</span>
+        <img class="catalog__image" src="img/rabbit.jpg" width="" height="" alt="игрушечный зайчик">
+        <div class="catalog__border">
+          <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
+          <p class="catalog__text">Рост 30 см, вес 200 г</p>
+          <span class="catalog__price">1 200 руб.</span>
+        </div>
       </div>
       <div class="catalog__product-card">
-        <h2 class="catalog__title">Корзинка для белья</h2>
-        <img class="catalog__image" src="#" width="" height="" alt="корзинка для белья">
-        <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
-        <span class="catalog__price">690 руб.</span>
+        <img class="catalog__image" src="img/basket-laundry.jpg" width="" height="" alt="корзинка для белья">
+        <div class="catalog__border">
+          <h2 class="catalog__title">Корзинка для белья</h2>
+          <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
+          <span class="catalog__price">690 руб.</span>
+        </div>
       </div>
       <div class="catalog__product-card">
-        <h2 class="catalog__title">Большая корзинка для игрушек</h2>
-        <img class="catalog__image" src="#" width="" height="" alt="большая корзина для игрушек">
-        <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
-        <span class="catalog__price">1 500 руб.</span>
+        <img class="catalog__image" src="img/basket-toy.jpg" width="" height="" alt="большая корзина для игрушек">
+        <div class="catalog__border">
+          <h2 class="catalog__title">Большая корзинка для игрушек</h2>
+          <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
+          <span class="catalog__price">1 500 руб.</span>
+        </div>
       </div>
     </section>
 
     <!-- Процесс производства -->
     <section class="video">
       <h2 class="video__title">Процесс производства</h2>
-      <video class="video__film" src="" width="" height="" alt=""></video>
+      <img class="video__film" src="img/video.jpg" width="" height="" alt="">
       <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
         как появляются наши товары.</p>
       <a class="video__button button" href="#">сделать заказ</a>
@@ -80,7 +87,7 @@
       <section class="footer-logo">
         <h3 class="footer-logo__tiile" aria-label="Логотип подвала"></h3>
         <a class="footer-logo__link logo logo--footer" href="#">
-          <img class="logo__logo-footer" src="" width="" height="" alt="логотип подвала">
+          <img class="logo__logo-footer" src="img/logo-footer.svg" width="" height="" alt="логотип подвала">
         </a>
       </section>
 
@@ -96,7 +103,8 @@
       <section class="developers">
         <h3 class="developers__title">Разработано</h3>
         <a class="developers__link developers-link-logo" href="#">
-          <img class="developers-link-logo__logo-htmlacademy" src="" width="" height="" alt="логотип html академии">
+          <img class="developers-link-logo__logo-htmlacademy" src="img/htmlacademy-logo.svg" width="" height=""
+            alt="логотип html академии">
         </a>
       </section>
     </footer>

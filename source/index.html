@@ -14,9 +14,10 @@
 
     <!-- Логотип "Мишек" в навигации -->
     <a class="header__logo logo logo--header" href="#">
-      <img class="logo__logo-navigation" src="" width="" height="" alt="Логотип в навигации">
+      <img class="logo__logo-navigation" src="img/mishka-logo-header-mobile.svg" width="" height=""
+        alt="Логотип в навигации">
     </a>
-    <a class="header__button" href="#">Закрыть-открыть меню</a>
+    <a class="header__button" aria-label="Закрыть-открыть меню" href="#">Закрыть-открыть меню</a>
 
     <!-- Навигация -->
     <nav class="header-navigation">
@@ -24,9 +25,7 @@
       <a class="header-navigation__link" href="form.html">Вязание на заказ</a>
       <a class="header-navigation__link" href="#">Новые поступления</a>
       <a class="header-navigation__link" href="#">Распродажа</a>
-      <a class="header-navigation__link header-navigation__link--search" href="#">
-        <span aria-label="Поиск по сайту"></span>
-      </a>
+      <a class="header-navigation__link header-navigation__link--search" href="#" aria-label="Поиск по сайту"></a>
       <a class="header-navigation__link header-navigation__link--basket" href="#">
         <span class="header-navigation__discription">Корзина: пока пуста</span>
       </a>
@@ -39,8 +38,8 @@
     <section class="main-header">
       <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
       <div class="main-header__wrapper">
-        <a class="main-header__sorting" href="#">Предметы интерьера</a>
-        <a class="main-header__sorting" href="#">Детские игрушки</a>
+        <a class="main-header__sorting main-header__sorting--left" href="#">Предметы интерьера</a>
+        <a class="main-header__sorting main-header__sorting--right" href="#">Детские игрушки</a>
       </div>
     </section>
 
@@ -58,7 +57,7 @@
         <dt class="feature-options__options">Высота:</dt>
         <dd class="feature-options__parameter">15 см</dd>
       </dl>
-      <img class="feature__image" src="" width="" height="" alt="">
+      <img class="feature__image" src="img/foto-triple.jpg" width="" height="" alt="">
       <b class="feature__price">Цена: 990 руб.</b>
       <a class="feature__button button" href="#">заказать</a>
     </section>
@@ -84,7 +83,8 @@
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
             лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
             фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__autor-name">Анастасия Красильникова @misssssiskras</cite>
+          <cite class="reviews__autor-name">Анастасия Красильникова</cite>
+          <p class="reviews__autor-nickname">@misssssiskras</p>
         </blockquote>
       </div>
       <div class="reviews__list">
@@ -92,7 +92,8 @@
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
             лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
             фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__autor-name">Анастасия Красильникова @misssssiskras</cite>
+          <cite class="reviews__autor-name">Анастасия Красильникова</cite>
+          <p class="reviews__autor-nickname">@misssssiskras</p>
         </blockquote>
       </div>
       <div class="reviews__list">
@@ -100,12 +101,15 @@
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
             лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
             фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__autor-name">Анастасия Красильникова @misssssiskras</cite>
+          <cite class="reviews__autor-name">Анастасия Красильникова</cite>
+          <p class="reviews__autor-nickname">@misssssiskras</p>
         </blockquote>
       </div>
-      <a class="reviews__prev" href="#">Предыдущий отзыв</a>
-      <a class=" reviews__next" href="#">Следующий отзыв</a>
-      <a class=" reviews__button button" href="#">написать</a>
+      <div class="reviews-arrow">
+        <a class="reviews__prev" href="#">Предыдущий отзыв</a>
+        <a class="reviews__next" href="#">Следующий отзыв</a>
+      </div>
+      <a class="reviews__button button" href="#">написать</a>
     </section>
 
     <!-- Контакты -->
@@ -115,7 +119,7 @@
       <p class="contacts__email">info@mimimishkashop.ru</p>
       <p class="contacts__adres">адрес</p>
       <p class="contacts__text">Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
-      <img class="contacts__image" src="" width="" height="" alt="карта с нашим местоположением">
+      <img class="contacts__image" src="img/map.jpg" width="" height="" alt="карта с нашим местоположением">
       <a class="contacts__button button" href="#">напишите нам</a>
     </section>
 
@@ -126,7 +130,7 @@
       <section class="footer-logo">
         <h3 class="footer-logo__tiile" aria-label="Логотип подвала"></h3>
         <a class="footer-logo__link logo logo--footer" href="#">
-          <img class="logo__logo-footer" src="" width="" height="" alt="логотип подвала">
+          <img class="logo__logo-footer" src="img/logo-footer.svg" width="" height="" alt="логотип подвала">
         </a>
       </section>
 
@@ -142,7 +146,8 @@
       <section class="developers">
         <h3 class="developers__title">Разработано</h3>
         <a class="developers__link developers-link-logo" href="#">
-          <img class="developers-link-logo__logo-htmlacademy" src="" width="" height="" alt="логотип html академии">
+          <img class="developers-link-logo__logo-htmlacademy" src="img/htmlacademy-logo.svg" width="" height=""
+            alt="логотип html академии">
         </a>
       </section>
     </footer>
