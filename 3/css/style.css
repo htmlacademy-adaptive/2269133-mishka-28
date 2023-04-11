@@ -1,0 +1,305 @@
+.about {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.about__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+.about__list {
+  list-style-type: none;
+  padding: 0;
+}
+.about__item {
+  margin-top: 30px;
+}
+.button {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  border: 2px solid #444444;
+  padding: 18px 15px;
+  text-decoration: none;
+  color: #444444;
+  text-transform: uppercase;
+}
+.contacts {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.contacts__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.contacts__button {
+  padding: 16px 38px;
+}
+.contacts__image {
+  display: block;
+}
+.contacts__button {
+  display: inline-block;
+}
+.developers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.developers__title {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.feature {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.feature__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.feature__subtitle {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #63D1BB;
+  text-transform: uppercase;
+}
+.feature-options {
+  display: grid;
+  grid-template-columns: 97px 162px;
+  row-gap: 20px;
+  line-height: 20px;
+}
+.feature-options__options {
+  display: inline;
+}
+.feature-options__parameter {
+  display: inline;
+}
+.feature__price {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+}
+.feature__button {
+  display: inline-block;
+  padding: 16px 70px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #F1F1F1;
+}
+.header-navigation {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.header-navigation__link {
+  text-decoration: none;
+  color: #000000;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main-header {
+  background-image: url("../img/hero-index.jpg");
+  width: 1150px;
+  height: 756px;
+  background-repeat: no-repeat;
+}
+.main-header__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.main-header__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.main-header__sorting {
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.main-header__sorting--left {
+  width: 525px;
+  height: 119px;
+  background-color: #63D1BB;
+}
+.main-header__sorting--right {
+  width: 525px;
+  height: 119px;
+  background-color: #56C3B2;
+}
+.reviews {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  background-image: url("../img/review-napkin.jpg");
+  background-repeat: no-repeat;
+}
+.reviews__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.reviews__item {
+  margin: 0;
+}
+.reviews__autor-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.reviews__autor-nickname {
+  font-size: 17px;
+}
+.reviews-arrow {
+  display: block;
+}
+.reviews__button {
+  display: inline-block;
+  padding: 16px 66px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-order {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.form-order__discription {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.form__group {
+  border: none;
+}
+.form__title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #63D1BB;
+  text-transform: uppercase;
+}
+.form__text {
+  font-size: 14px;
+  font-weight: 400;
+}
+.form__button {
+  display: inline-block;
+  padding: 18px 37px;
+}
+.main-header-form__title {
+  text-align: center;
+}
+.main-header-form {
+  background-color: #F1F1F1;
+}
+.main-header-form__title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.catalog__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.catalog__text {
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.catalog__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.main-header-catalog {
+  background-color: #F1F1F1;
+}
+.catalog__image {
+  display: block;
+}
+.catalog__border {
+  border: 1px solid #ECECEC;
+  margin-bottom: 30px;
+}
+.main-header-catalog__title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.video {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.video__title {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+}
+.video__button {
+  display: inline-block;
+  padding: 18px 11px;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff") format("woff");
+  font-display: swap;
+}
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  width: 1150px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Форма заказа вязания на заказ: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
+  <base href="https://htmlacademy-adaptive.github.io/2269133-mishka-28/3/">
+</head>
+
+<body>
+
+  <!-- Хедер -->
+  <header class="header header-form">
+
+    <!-- Логотип "Мишек" в навигации -->
+    <a class="header__logo logo" href="index.html">
+      <img class="logo__logo-navigation" src="img/mishka-logo-header-mobile.svg" width="" height=""
+        alt="Логотип в навигации">
+    </a>
+    <a class="header__button" href="#">Закрыть-открыть меню</a>
+
+    <!-- Навигация -->
+    <nav class="header-navigation">
+      <a class="header-navigation__link" href="catalog.html">Каталог товаров</a>
+      <a class="header-navigation__link" href="form.html">Вязание на заказ</a>
+      <a class="header-navigation__link" href="#">Новые поступления</a>
+      <a class="header-navigation__link" href="#">Распродажа</a>
+      <a class="header-navigation__link header-navigation__link--search" href="#">
+        <span aria-label="Поиск по сайту"></span>
+      </a>
+      <a class="header-navigation__link header-navigation__link--basket" href="#">
+        <span class="header-navigation__discription">Корзина: пока пуста</span>
+      </a>
+      <span class="header-navigation__text">Бесплатная доставка по России</span>
+    </nav>
+  </header>
+
+  <!-- Оглавление -->
+  <main class="main main-form">
+    <section class="main-header-form">
+      <h1 class="main-header-form__title">Вязание на заказ</h1>
+    </section>
+
+    <!-- Форма заказа -->
+    <section class="form-order">
+      <h2 class="form-order__title" aria-label="Форма заказа вязания на заказ"></h2>
+      <p class="form-order__discription">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
+        и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form-order__form form" action="" method="get">
+
+        <!-- Заказ по типу -->
+        <fieldset class="form__group">
+          <legend class="form__title">тип</legend>
+          <input class="form__button" type="radio" name="radio-button" id="interior-accessory" checked>
+          <label class="form__label" for="interior-accessory">Аксессуар для интерьера</label>
+          <input class="form__button" type="radio" name="radio-button" id="children-toy">
+          <label class="form__label" for="children-toy">Детская игрушка</label>
+        </fieldset>
+
+        <!-- Заказ по цвету -->
+        <fieldset class="form__group">
+          <legend class="form__title">цвет</legend>
+          <input class="form__button" type="checkbox" name="radio-button" id="color-white" checked>
+          <label class="form__label" for="color-white">Белый</label>
+          <input class="form__button" type="checkbox" name="radio-button" id="color-grey" checked>
+          <label class="form__label" for="color-grey">Серый</label>
+          <input class="form__button" type="checkbox" name="radio-button" id="color-tiffany">
+          <label class="form__label" for="color-tiffany">Тиффани</label>
+          <input class="form__button" type="checkbox" name="radio-button" id="color-black">
+          <label class="form__label" for="color-black">Черный</label>
+          <input class="form__button" type="checkbox" name="radio-button" id="color-pink">
+          <label class="form__label" for="color-pink">Розовый</label>
+          <input class="form__button" type="checkbox" name="radio-button" id="color-orange">
+          <label class="form__label" for="color-orange">Оранжевый</label>
+        </fieldset>
+
+        <!-- ФИО -->
+        <fieldset class="form__group">
+          <legend class="form__title">фио</legend>
+          <label class="form__value" for="form-group-name">Имя:</label>
+          <input class="form__input" placeholder="Введите ваше имя*" type="text" name="form-group-name"
+            id="form-group-name" required>
+          <label class="form__value" for="form-group-surname">Фамилия:</label>
+          <input class="form__input" placeholder="Укажите фамилию*" type="text" name="form-group-surname"
+            id="form-group-surname" required>
+          <label class="form__value" for="form-group-patronymic">Отчество:</label>
+          <input class="form__input" placeholder="Отчество, если желаете" type="text" name="form-group-patronymic"
+            id="form-group-patronymic">
+        </fieldset>
+
+        <!-- Телефон -->
+        <fieldset class="form__group">
+          <legend class="form__title">тел</legend>
+          <label class="form__value" aria-label="Телефон:" for="form-group-phone"></label>
+          <input class="form__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="form-group-phone"
+            id="form-group-phone" required>
+        </fieldset>
+
+        <!-- E-mail -->
+        <fieldset class="form__group">
+          <legend class="form__title">e-mail</legend>
+          <label class="form__value" aria-label="Электронная почта:" for="form-group-email"></label>
+          <input class="form__input" placeholder="Ваш Email*" type="email" name="form-group-email" id="form-group-email"
+            required>
+        </fieldset>
+
+        <!-- Дополнения -->
+        <fieldset class="form__group">
+          <legend class="form__title">доп</legend>
+          <label class="form__value" aria-label="Дополнения:" for="form-group-wishes"></label>
+          <textarea class="form__comment" placeholder="Опишите все ваши пожелания к заказу" type="text"
+            name="form-group-wishes" id="form-group-wishes" rows="6">
+          </textarea>
+        </fieldset>
+
+        <!-- Текст в конце формы -->
+        <p class="form__text">*Поля обязательны для заполнения</p>
+
+        <!-- Кнопка в конце формы ОТПРАВИТЬ ЗАКАЗ -->
+        <a class="form__button button" href="#">отправить заказ</a>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer footer-form">
+
+    <!-- Логотип "Мишек" в подвале -->
+    <section class="footer-logo">
+      <h3 class="footer-logo__tiile" aria-label="Логотип подвала"></h3>
+      <a class="footer-logo__link logo logo--footer" href="#">
+        <img class="logo__logo-footer" src="img/logo-footer.svg" width="" height="" alt="логотип подвала">
+      </a>
+    </section>
+
+    <!-- Социальные сети -->
+    <section class="social">
+      <h3 class="social__tiile" aria-label="Социальные сети"></h3>
+      <a class="social__item social__item--vk" href="#">vk</a>
+      <a class="social__item social__item--you-tube" href="#">you-tube</a>
+      <a class="social__item social__item--telegram" href="#">telegram</a>
+    </section>
+
+    <!-- Разработчики -->
+    <section class="developers">
+      <h3 class="developers__title">Разработано</h3>
+      <a class="developers__link developers-link-logo" href="#">
+        <img class="developers-link-logo__logo-htmlacademy" src="img/htmlacademy-logo.svg" width="" height=""
+          alt="логотип html академии">
+      </a>
+    </section>
+  </footer>
+
+</body>
+
+</html>
