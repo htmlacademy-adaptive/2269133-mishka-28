@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог товаров: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,63 +13,70 @@
   <header class="header header-catalog">
 
     <!-- Логотип "Мишек" в навигации -->
-    <a class="header__logo header-logo-link" href="index.html">
-      <img class="header-logo-link__logo-navigation" src="" width="" height="" alt="">
+    <a class="header__logo logo" href="index.html">
+      <img class="logo__logo-navigation" src="img/mishka-logo-header-mobile.svg" width="" height=""
+        alt="Логотип в навигации">
     </a>
-    <button class="header__button button" type="button">Закрыть-открыть меню</button>
+    <a class="header__button" href="#">Закрыть-открыть меню</a>
 
     <!-- Навигация -->
     <nav class="header-navigation">
       <a class="header-navigation__link" href="catalog.html">Каталог товаров</a>
       <a class="header-navigation__link" href="form.html">Вязание на заказ</a>
+      <a class="header-navigation__link" href="#">Новые поступления</a>
+      <a class="header-navigation__link" href="#">Распродажа</a>
       <a class="header-navigation__link header-navigation__link--search" href="#">
-        <span class="visually-hidden">Поиск по сайту</span>
+        <span aria-label="Поиск по сайту"></span>
       </a>
       <a class="header-navigation__link header-navigation__link--basket" href="#">
-        <span class="header-navigation__desc">Корзина: пока пуста</span>
+        <span class="header-navigation__discription">Корзина: пока пуста</span>
       </a>
+      <span class="header-navigation__text">Бесплатная доставка по России</span>
     </nav>
   </header>
 
   <!-- Оглавление -->
   <main class="main main-catalog">
-    <section class="main-header">
-      <h1 class="main-header__title">Каталог товаров</h1>
-      <a class="main-header__desc main-header__desc--promotions" href="#">Новые поступления</a>
-      <a class="main-header__desc main-header__desc--promotions" href="#">Распродажа</a>
-      <span class="main-header__text">Бесплатная доставка по России</span>
+    <section class="main-header-catalog">
+      <h1 class="main-header-catalog__title">Каталог товаров</h1>
     </section>
 
     <!-- Каталог товаров и карточки товаров -->
     <section class="catalog">
-      <h1 class="visually-hidden">Каталог товаров</h1>
+      <h1 aria-label="Каталог товаров"></h1>
       <div class="catalog__product-card">
-        <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
-        <img class="catalog__image-rebbit" src="#" width="" height="" alt="">
-        <p class="catalog__text">Рост 30 см, вес 200 г</p>
-        <span class="catalog__price">1 200 руб.</span>
+        <img class="catalog__image" src="img/rabbit.jpg" width="" height="" alt="игрушечный зайчик">
+        <div class="catalog__border">
+          <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
+          <p class="catalog__text">Рост 30 см, вес 200 г</p>
+          <span class="catalog__price">1 200 руб.</span>
+        </div>
       </div>
       <div class="catalog__product-card">
-        <h2 class="catalog__title">Корзинка для белья</h2>
-        <img class="catalog__image-laundry-basket" src="#" width="" height="" alt="">
-        <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
-        <span class="catalog__price">690 руб.</span>
+        <img class="catalog__image" src="img/basket-laundry.jpg" width="" height="" alt="корзинка для белья">
+        <div class="catalog__border">
+          <h2 class="catalog__title">Корзинка для белья</h2>
+          <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
+          <span class="catalog__price">690 руб.</span>
+        </div>
       </div>
       <div class="catalog__product-card">
-        <h2 class="catalog__title">Большая корзинка для игрушек</h2>
-        <img class="catalog__image-toy basket" src="#" width="" height="" alt="">
-        <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
-        <span class="catalog__price">1 500 руб.</span>
+        <img class="catalog__image" src="img/basket-toy.jpg" width="" height="" alt="большая корзина для игрушек">
+        <div class="catalog__border">
+          <h2 class="catalog__title">Большая корзинка для игрушек</h2>
+          <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
+          <span class="catalog__price">1 500 руб.</span>
+        </div>
       </div>
     </section>
 
     <!-- Процесс производства -->
-    <section class="production-process">
-      <h2 class="production-process__title">Процесс производства</h2>
-      <video class="production-process__video" src="" width="" height="" alt=""></video>
-      <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+    <section class="video">
+      <h2 class="video__title">Процесс производства</h2>
+      <img class="video__film" src="img/video.jpg" width="" height="" alt="">
+      <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
         как появляются наши товары.</p>
-      <button class="production-process__button button" type="button">СДЕЛАТЬ ЗАКАЗ</button>
+      <a class="video__button button" href="#">сделать заказ</a>
     </section>
 
 
@@ -77,25 +85,26 @@
 
       <!-- Логотип "Мишек" в подвале -->
       <section class="footer-logo">
-        <h3 class="footer-logo__tiile visually-hidden">Логотип подвала</h3>
-        <a class="footer-logo__link link-logo" href="#">
-          <img class="link-logo__logo" src="" width="" height="" alt="">
+        <h3 class="footer-logo__tiile" aria-label="Логотип подвала"></h3>
+        <a class="footer-logo__link logo logo--footer" href="#">
+          <img class="logo__logo-footer" src="img/logo-footer.svg" width="" height="" alt="логотип подвала">
         </a>
       </section>
 
       <!-- Социальные сети -->
       <section class="social">
-        <h3 class="social__tiile visually-hidden">Социальные сети</h3>
-        <a class="social__vk" href="#">VK</a>
-        <a class="social__you-tube" href="#">You-Tube</a>
-        <a class="social__telegram" href="#">Telegram</a>
+        <h3 class="social__tiile" aria-label="Социальные сети"></h3>
+        <a class="social__item social__item--vk" href="#">vk</a>
+        <a class="social__item social__item--you-tube" href="#">you-tube</a>
+        <a class="social__item social__item--telegram" href="#">telegram</a>
       </section>
 
       <!-- Разработчики -->
       <section class="developers">
         <h3 class="developers__title">Разработано</h3>
         <a class="developers__link developers-link-logo" href="#">
-          <img class="developers-link-logo__logo-htmlacademy" src="" width="" height="" alt="">
+          <img class="developers-link-logo__logo-htmlacademy" src="img/htmlacademy-logo.svg" width="" height=""
+            alt="логотип html академии">
         </a>
       </section>
     </footer>
