@@ -1,5 +1,5 @@
 .feature {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: @fontfamily;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
@@ -10,29 +10,32 @@
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+  margin: 0;
+  margin-top: 31px;
+  padding: @mobile-padding;
 }
 
 .feature__subtitle {
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  color: #63D1BB;
+  color: #63d1bb;
   text-transform: uppercase;
+  padding: @mobile-padding;
+  margin: 0;
+  margin-top: 3px;
 }
 
-.feature-options {
-  display: grid;
-  grid-template-columns: 97px 162px;
-  row-gap: 20px;
-  line-height: 20px;
+.feature__discription {
+  margin: 0;
+  margin-top: 18px;
+  padding: @mobile-padding;
 }
 
-.feature-options__options {
-  display: inline;
-}
-
-.feature-options__parameter {
-  display: inline;
+.feature__image {
+  display: block;
+  padding: @mobile-padding;
+  padding-top: 28px;
 }
 
 .feature__price {
@@ -40,9 +43,11 @@
   font-size: 17px;
   font-weight: 700;
   text-align: center;
+  padding-top: 25px;
 }
 
 .feature__button {
   display: inline-block;
   padding: 16px 70px;
+  margin: 25px 30px 36px;
 }

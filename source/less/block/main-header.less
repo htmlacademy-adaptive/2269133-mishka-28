@@ -1,39 +1,48 @@
 .main-header {
   background-image: url("../img/hero-index.jpg");
-  width: 1150px;
-  height: 756px;
+  width: 320px;
+  height: 506px;
   background-repeat: no-repeat;
 }
 
 .main-header__title {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: @fontfamily;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+  margin: 0;
+  padding: @mobile-padding;
+  padding-top: 90px;
+  margin-bottom: 120px;
 }
 
 .main-header__wrapper {
-  display: flex;
-  justify-content: center;
+  display: grid;
 }
 
 .main-header__sorting {
-  color: #ffffff;
+  color: @white;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
+  padding: @mobile-padding;
 }
 
 .main-header__sorting--left {
-  width: 525px;
-  height: 119px;
-  background-color: #63D1BB;
+  width: auto;
+  height: 103px;
+  background-color: #63d1bb;
 }
 
 .main-header__sorting--right {
-  width: 525px;
-  height: 119px;
-  background-color: #56C3B2;
+  width: auto;
+  height: 103px;
+  background-color: #56c3b2;
+}
+
+.main-header__sorting-text {
+  display: block;
+  padding-top: 24px;
 }
