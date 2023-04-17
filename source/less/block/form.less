@@ -1,9 +1,16 @@
 .form__group {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 42px 1fr;
+  row-gap: 10px;
   border: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 32px;
+}
+
+.form__group-input {
+  display: grid;
+  grid-template-columns: auto;
 }
 
 .form__title {
@@ -12,6 +19,8 @@
   font-weight: 700;
   color: #63d1bb;
   text-transform: uppercase;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .form__text {
@@ -20,6 +29,11 @@
 }
 
 .form__button {
-  display: inline-block;
+  display: block;
   padding: 18px 37px;
+  margin: 0;
+}
+
+.form__label {
+  margin-left: 19px;
 }
