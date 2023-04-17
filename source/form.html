@@ -87,7 +87,7 @@
         </fieldset>
 
         <!-- Телефон -->
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group-input">
           <legend class="form__title">тел</legend>
           <label class="form__value" aria-label="Телефон:" for="form-group-phone"></label>
           <input class="form__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="form-group-phone"
@@ -95,7 +95,7 @@
         </fieldset>
 
         <!-- E-mail -->
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group-input">
           <legend class="form__title">e-mail</legend>
           <label class="form__value" aria-label="Электронная почта:" for="form-group-email"></label>
           <input class="form__input" placeholder="Ваш Email*" type="email" name="form-group-email" id="form-group-email"
@@ -103,12 +103,11 @@
         </fieldset>
 
         <!-- Дополнения -->
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group-input">
           <legend class="form__title">доп</legend>
           <label class="form__value" aria-label="Дополнения:" for="form-group-wishes"></label>
-          <textarea class="form__comment" placeholder="Опишите все ваши пожелания к заказу" type="text"
-            name="form-group-wishes" id="form-group-wishes" rows="6">
-          </textarea>
+          <textarea class="form__comment" placeholder="Опишите все ваши пожелания к заказу" name="form-group-wishes"
+            id="form-group-wishes" rows="6" wrap="soft" required></textarea>
         </fieldset>
 
         <!-- Текст в конце формы -->
