@@ -14,23 +14,26 @@
   <header class="header header-catalog">
 
     <!-- Логотип "Мишек" в навигации -->
-    <a class="header__logo logo" href="index.html">
+    <a class="header__logo logo logo--header" href="index.html">
       <img class="logo__logo-navigation" src="img/mishka-logo-header-mobile.svg" width="86px" height="35px"
         alt="Логотип в навигации">
     </a>
-    <a class="header__button" href="#">Закрыть-открыть меню</a>
 
     <!-- Навигация -->
     <nav class="header-navigation">
-      <a class="header-navigation__link" href="catalog.html">Каталог товаров</a>
-      <a class="header-navigation__link" href="form.html">Вязание на заказ</a>
-      <a class="header-navigation__link" href="#">Новые поступления</a>
-      <a class="header-navigation__link" href="#">Распродажа</a>
-      <a class="header-navigation__link header-navigation__link--search" href="#" aria-label="Поиск по сайту"></a>
-      <a class="header-navigation__link header-navigation__link--basket" href="#">
+      <div class="header-navigation__wrapper">
+        <a class="header-navigation__button" aria-label="Закрыть-открыть меню" href="#">Закрыть-открыть меню</a>
+      </div>
+      <a class="header-navigation__link header-navigation__link-tablet product" href="catalog.html">Каталог товаров</a>
+      <a class="header-navigation__link header-navigation__link-tablet order" href="form.html">Вязание на заказ</a>
+      <a class="header-navigation__link header-navigation__link-none new" href="#">Новые поступления</a>
+      <a class="header-navigation__link header-navigation__link-none sale" href="#">Распродажа</a>
+      <a class="header-navigation__link header-navigation__link--search search" href="#"
+        aria-label="Поиск по сайту">Поиск по сайту</a>
+      <a class="header-navigation__link header-navigation__link--basket basket" href="#">
         <span class="header-navigation__discription">Корзина: пока пуста</span>
       </a>
-      <span class="header-navigation__text">Бесплатная доставка по России</span>
+      <span class="header-navigation__text delivery">Бесплатная доставка по России</span>
     </nav>
   </header>
 
