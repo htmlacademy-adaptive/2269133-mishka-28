@@ -1,5 +1,28 @@
 .header {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
+  height: 89px;
+}
+
+.logo__logo-navigation {
+  margin: 29px;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    position: relative;
+    height: 89px;
+  }
+
+  .header__logo {
+    position: absolute;
+    left: 48px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .header__logo {
+    left: 45%;
+    top: 0%;
+  }
 }

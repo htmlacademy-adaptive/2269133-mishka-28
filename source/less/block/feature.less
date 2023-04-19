@@ -1,4 +1,5 @@
 .feature {
+  position: relative;
   font-family: @fontfamily;
   font-size: 15px;
   line-height: 24px;
@@ -50,4 +51,75 @@
   display: inline-block;
   padding: 16px 70px;
   margin: 25px 30px 36px;
+}
+
+br {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .feature {
+    padding: @tablet-padding;
+  }
+
+  .feature__title {
+    display: inline;
+    font-size: 43px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+    padding: @tablet-padding;
+  }
+
+  .feature__subtitle {
+    display: inline-block;
+    line-height: 17px;
+    padding: 0;
+    margin: 0;
+  }
+
+  br {
+    display: inline-block;
+  }
+
+  .feature__discription {
+    line-height: 30px;
+    margin-top: 37px;
+  }
+
+  .feature__image {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 334px;
+    height: 404px;
+    padding: @tablet-padding;
+  }
+
+  .feature__price {
+    text-align: start;
+    margin-left: 95px;
+    padding-top: 57px;
+    padding-bottom: 15px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .feature {
+    padding: 0 175px;
+  }
+
+  .feature__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 0 25px;
+  }
+
+  .feature__subtitle {
+    position: absolute;
+    left: 60px;
+    top: 15px;
+  }
+
 }
