@@ -1,0 +1,38 @@
+.form-order {
+  font-family: @fontfamily;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: @mobile-padding;
+  margin-bottom: 55px;
+}
+
+.form-order__title {
+  margin: 0;
+}
+
+.form-order__discription {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 29px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-order {
+    padding: @tablet-padding;
+  }
+
+  .form-order__discription {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-order__discription {
+    padding: 0 225px;
+  }
+}

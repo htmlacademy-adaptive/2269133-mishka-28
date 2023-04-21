@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Главная страница: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -14,22 +15,41 @@
 
     <!-- Логотип "Мишек" в навигации -->
     <a class="header__logo logo logo--header" href="#">
-      <img class="logo__logo-navigation" src="img/mishka-logo-header-mobile.svg" width="" height=""
+      <img class="logo__logo-navigation" src="img/mishka-logo-header-mobile.svg" width="86px" height="35px"
         alt="Логотип в навигации">
     </a>
-    <a class="header__button" aria-label="Закрыть-открыть меню" href="#">Закрыть-открыть меню</a>
 
     <!-- Навигация -->
     <nav class="header-navigation">
-      <a class="header-navigation__link" href="catalog.html">Каталог товаров</a>
-      <a class="header-navigation__link" href="form.html">Вязание на заказ</a>
-      <a class="header-navigation__link" href="#">Новые поступления</a>
-      <a class="header-navigation__link" href="#">Распродажа</a>
-      <a class="header-navigation__link header-navigation__link--search" href="#" aria-label="Поиск по сайту"></a>
-      <a class="header-navigation__link header-navigation__link--basket" href="#">
-        <span class="header-navigation__discription">Корзина: пока пуста</span>
-      </a>
-      <span class="header-navigation__text">Бесплатная доставка по России</span>
+      <div class="header-navigation__wrapper header-navigation__wrapper--closed">
+        <button class="header-navigation__button" type="button"></button>
+      </div>
+      <div class="header-navigation__list">
+        <a class="header-navigation__link header-navigation__link-tablet product" href="catalog.html">Каталог
+          товаров</a>
+        <a class="header-navigation__link header-navigation__link-tablet order" href="form.html">Вязание на заказ</a>
+        <a class="header-navigation__link header-navigation__link-none new" href="#">Новые поступления</a>
+        <a class="header-navigation__link header-navigation__link-none sale" href="#">Распродажа</a>
+        <a class="header-navigation__link header-navigation__link--search search" href="#">
+          <svg class="header-navigation__icon-search" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"
+            focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.2"
+              d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z"
+              fill="currentColor" />
+          </svg>
+          Поиск по сайту</a>
+        <a class="header-navigation__link header-navigation__link--basket basket" href="#">
+          <span class="header-navigation__discription">
+            <svg class="header-navigation__icon-cart" width="21" height="18" viewBox="0 0 21 18" aria-hidden="true"
+              focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"
+                fill="currentColor" />
+            </svg>
+            Корзина: пока пуста</span>
+        </a>
+        <span class="header-navigation__text delivery">Бесплатная доставка по России</span>
+      </div>
     </nav>
   </header>
 
@@ -38,17 +58,21 @@
     <section class="main-header">
       <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
       <div class="main-header__wrapper">
-        <a class="main-header__sorting main-header__sorting--left" href="#">Предметы интерьера</a>
-        <a class="main-header__sorting main-header__sorting--right" href="#">Детские игрушки</a>
+        <a class="main-header__sorting main-header__sorting--left" href="#">
+          <span class="main-header__sorting-text">Предметы <br> интерьера</span>
+        </a>
+        <a class="main-header__sorting main-header__sorting--right" href="#">
+          <span class="main-header__sorting-text">Детские <br> игрушки</span>
+        </a>
       </div>
     </section>
 
     <!-- Рекомендуемый товар-->
     <section class="feature">
       <h2 class="feature__title">Вязаные корзинки</h2>
-      <h3 class="feature__subtitle">товар недели</h3>
-      <p class="feature__discription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
-        размерах.</p>
+      <h3 class="feature__subtitle">товар <br> недели</h3>
+      <p class="feature__discription">Экологически чистая пряжа, <br> ручная работа. Доступны в шести <br> расцветках и
+        трёх размерах.</p>
       <dl class="feature-options">
         <dt class="feature-options__options">Цвет:</dt>
         <dd class="feature-options__parameter">тиффани/серый</dd>
@@ -57,7 +81,7 @@
         <dt class="feature-options__options">Высота:</dt>
         <dd class="feature-options__parameter">15 см</dd>
       </dl>
-      <img class="feature__image" src="img/foto-triple.jpg" width="" height="" alt="">
+      <img class="feature__image" src="img/foto-triple.jpg" width="260px" height="315px" alt="корзинки вязаные">
       <b class="feature__price">Цена: 990 руб.</b>
       <a class="feature__button button" href="#">заказать</a>
     </section>
@@ -66,12 +90,12 @@
     <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list">
-        <li class="about__item about__item--flower">Экологически чистые материалы</li>
-        <li class="about__item about__item--money">Скандинавский стиль по российской цене</li>
-        <li class="about__item about__item--heart">Увеличивает лайки на фотографиях</li>
-        <li class="about__item about__item--clew">Связано вручную с любовью и умилением</li>
+        <li class="about__item about__item--flower">Экологически <br> чистые материалы</li>
+        <li class="about__item about__item--money">Скандинавский стиль <br> по российской цене</li>
+        <li class="about__item about__item--heart">Увеличивает лайки <br> на фотографиях</li>
+        <li class="about__item about__item--clew">Связано вручную <br> с любовью и умилением</li>
         <li class="about__item about__item--rocket">Поддержка отечественного производителя</li>
-        <li class="about__item about__item--present">Поставляется в подарочной упаковке</li>
+        <li class="about__item about__item--present">Поставляется <br> в подарочной упаковке</li>
       </ul>
     </section>
 
@@ -87,7 +111,7 @@
           <p class="reviews__autor-nickname">@misssssiskras</p>
         </blockquote>
       </div>
-      <div class="reviews__list">
+      <!-- <div class="reviews__list">
         <blockquote class="reviews__item">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
             лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
@@ -104,7 +128,7 @@
           <cite class="reviews__autor-name">Анастасия Красильникова</cite>
           <p class="reviews__autor-nickname">@misssssiskras</p>
         </blockquote>
-      </div>
+      </div> -->
       <div class="reviews-arrow">
         <a class="reviews__prev" href="#">Предыдущий отзыв</a>
         <a class="reviews__next" href="#">Следующий отзыв</a>
@@ -115,11 +139,16 @@
     <!-- Контакты -->
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
-      <p class="contacts__email-label">e-mail</p>
-      <p class="contacts__email">info@mimimishkashop.ru</p>
-      <p class="contacts__adres">адрес</p>
-      <p class="contacts__text">Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
-      <img class="contacts__image" src="img/map.jpg" width="" height="" alt="карта с нашим местоположением">
+      <div class="contacts__wrapper">
+        <p class="contacts__email-label">e-mail</p>
+        <p class="contacts__email">info@mimimishkashop.ru</p>
+        <p class="contacts__adres">адрес</p>
+        <p class="contacts__text">Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</p>
+      </div>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198127!2d30.320472477182907!3d59.93871916209366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2s!4v1681630968131!5m2!1sru!2s"
+        width="320px" height="455px" allowfullscreen
+        title="Адрес магазина Мишек Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101"></iframe>
       <a class="contacts__button button" href="#">напишите нам</a>
     </section>
 
@@ -130,7 +159,7 @@
       <section class="footer-logo">
         <h3 class="footer-logo__tiile" aria-label="Логотип подвала"></h3>
         <a class="footer-logo__link logo logo--footer" href="#">
-          <img class="logo__logo-footer" src="img/logo-footer.svg" width="" height="" alt="логотип подвала">
+          <img class="logo__logo-footer" src="img/logo-footer.svg" width="101px" height="34px" alt="логотип подвала">
         </a>
       </section>
 
@@ -146,7 +175,7 @@
       <section class="developers">
         <h3 class="developers__title">Разработано</h3>
         <a class="developers__link developers-link-logo" href="#">
-          <img class="developers-link-logo__logo-htmlacademy" src="img/htmlacademy-logo.svg" width="" height=""
+          <img class="developers-link-logo__logo-htmlacademy" src="img/htmlacademy-logo.svg" width="27px" height="34px"
             alt="логотип html академии">
         </a>
       </section>

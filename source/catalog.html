@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Каталог товаров: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -13,25 +14,26 @@
   <header class="header header-catalog">
 
     <!-- Логотип "Мишек" в навигации -->
-    <a class="header__logo logo" href="index.html">
-      <img class="logo__logo-navigation" src="img/mishka-logo-header-mobile.svg" width="" height=""
+    <a class="header__logo logo logo--header" href="index.html">
+      <img class="logo__logo-navigation" src="img/mishka-logo-header-mobile.svg" width="86px" height="35px"
         alt="Логотип в навигации">
     </a>
-    <a class="header__button" href="#">Закрыть-открыть меню</a>
 
     <!-- Навигация -->
     <nav class="header-navigation">
-      <a class="header-navigation__link" href="catalog.html">Каталог товаров</a>
-      <a class="header-navigation__link" href="form.html">Вязание на заказ</a>
-      <a class="header-navigation__link" href="#">Новые поступления</a>
-      <a class="header-navigation__link" href="#">Распродажа</a>
-      <a class="header-navigation__link header-navigation__link--search" href="#">
-        <span aria-label="Поиск по сайту"></span>
-      </a>
-      <a class="header-navigation__link header-navigation__link--basket" href="#">
+      <div class="header-navigation__wrapper">
+        <button class="header-navigation__button" type="button"></button>
+      </div>
+      <a class="header-navigation__link header-navigation__link-tablet product" href="catalog.html">Каталог товаров</a>
+      <a class="header-navigation__link header-navigation__link-tablet order" href="form.html">Вязание на заказ</a>
+      <a class="header-navigation__link header-navigation__link-none new" href="#">Новые поступления</a>
+      <a class="header-navigation__link header-navigation__link-none sale" href="#">Распродажа</a>
+      <a class="header-navigation__link header-navigation__link--search search" href="#"
+        aria-label="Поиск по сайту">Поиск по сайту</a>
+      <a class="header-navigation__link header-navigation__link--basket basket" href="#">
         <span class="header-navigation__discription">Корзина: пока пуста</span>
       </a>
-      <span class="header-navigation__text">Бесплатная доставка по России</span>
+      <span class="header-navigation__text delivery">Бесплатная доставка по России</span>
     </nav>
   </header>
 
@@ -45,7 +47,7 @@
     <section class="catalog">
       <h1 aria-label="Каталог товаров"></h1>
       <div class="catalog__product-card">
-        <img class="catalog__image" src="img/rabbit.jpg" width="" height="" alt="игрушечный зайчик">
+        <img class="catalog__image" src="img/rabbit.jpg" width="260px" height="195px" alt="игрушечный зайчик">
         <div class="catalog__border">
           <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
           <p class="catalog__text">Рост 30 см, вес 200 г</p>
@@ -53,7 +55,7 @@
         </div>
       </div>
       <div class="catalog__product-card">
-        <img class="catalog__image" src="img/basket-laundry.jpg" width="" height="" alt="корзинка для белья">
+        <img class="catalog__image" src="img/basket-laundry.jpg" width="260px" height="195px" alt="корзинка для белья">
         <div class="catalog__border">
           <h2 class="catalog__title">Корзинка для белья</h2>
           <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
@@ -61,7 +63,8 @@
         </div>
       </div>
       <div class="catalog__product-card">
-        <img class="catalog__image" src="img/basket-toy.jpg" width="" height="" alt="большая корзина для игрушек">
+        <img class="catalog__image" src="img/basket-toy.jpg" width="260px" height="195px"
+          alt="большая корзина для игрушек">
         <div class="catalog__border">
           <h2 class="catalog__title">Большая корзинка для игрушек</h2>
           <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
@@ -73,7 +76,7 @@
     <!-- Процесс производства -->
     <section class="video">
       <h2 class="video__title">Процесс производства</h2>
-      <img class="video__film" src="img/video.jpg" width="" height="" alt="">
+      <img class="video__film" src="img/video.jpg" width="260px" height="160px" alt="Видео процесса производства">
       <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
         как появляются наши товары.</p>
       <a class="video__button button" href="#">сделать заказ</a>
@@ -87,7 +90,7 @@
       <section class="footer-logo">
         <h3 class="footer-logo__tiile" aria-label="Логотип подвала"></h3>
         <a class="footer-logo__link logo logo--footer" href="#">
-          <img class="logo__logo-footer" src="img/logo-footer.svg" width="" height="" alt="логотип подвала">
+          <img class="logo__logo-footer" src="img/logo-footer.svg" width="101px" height="34px" alt="логотип подвала">
         </a>
       </section>
 
@@ -103,7 +106,7 @@
       <section class="developers">
         <h3 class="developers__title">Разработано</h3>
         <a class="developers__link developers-link-logo" href="#">
-          <img class="developers-link-logo__logo-htmlacademy" src="img/htmlacademy-logo.svg" width="" height=""
+          <img class="developers-link-logo__logo-htmlacademy" src="img/htmlacademy-logo.svg" width="27px" height="34px"
             alt="логотип html академии">
         </a>
       </section>

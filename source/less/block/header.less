@@ -1,0 +1,32 @@
+.header {
+  height: 79px;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo__logo-navigation {
+  margin: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    position: relative;
+    height: 79px;
+  }
+
+  .header__logo {
+    position: absolute;
+    left: 48px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .header__logo {
+    left: 45%;
+    top: 0%;
+  }
+}
