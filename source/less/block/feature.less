@@ -4,13 +4,17 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
+
+  background-image: url('../../img/zigzag-line.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
 }
 
 .feature__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
-  text-align: center;
   margin: 0;
   margin-top: 31px;
   padding: @mobile-padding;
@@ -25,6 +29,10 @@
   padding: @mobile-padding;
   margin: 0;
   margin-top: 3px;
+
+  br {
+    display: none;
+  }
 }
 
 .feature__discription {
@@ -49,26 +57,27 @@
 
 .feature__button {
   display: inline-block;
-  padding: 16px 70px;
+  padding: 16px 80px;
   margin: 25px 30px 36px;
 }
 
-br {
-  display: none;
+.feature__zigzag-line {
+  display: block;
+  margin: 20px 0;
 }
 
 @media (min-width: @tablet-width) {
   .feature {
     padding: @tablet-padding;
+    padding-top: 40px;
+    padding-bottom: 52px;
   }
 
   .feature__title {
     display: inline;
     font-size: 43px;
     line-height: 50px;
-    padding: 0;
     margin: 0;
-    padding: @tablet-padding;
   }
 
   .feature__subtitle {
@@ -76,10 +85,10 @@ br {
     line-height: 17px;
     padding: 0;
     margin: 0;
-  }
 
-  br {
-    display: inline-block;
+    br {
+      display: inline-block;
+    }
   }
 
   .feature__discription {
@@ -90,7 +99,7 @@ br {
   .feature__image {
     position: absolute;
     right: 0;
-    top: 70px;
+    top: 135px;
     width: 334px;
     height: 404px;
     padding: @tablet-padding;
@@ -107,19 +116,40 @@ br {
 
 @media (min-width: @desktop-width) {
   .feature {
-    padding: 0 175px;
+    padding: 0 225px;
+    padding-top: 110px;
+    padding-bottom: 73px;
   }
 
   .feature__title {
     font-size: 53px;
     line-height: 57px;
-    padding: 0 25px;
+    padding: 0;
   }
 
   .feature__subtitle {
     position: absolute;
     left: 60px;
-    top: 15px;
+    top: 120px;
   }
 
+  .feature__discription {
+    padding: 0;
+  }
+
+  .feature__image {
+    width: 525px;
+    height: 636px;
+    z-index: -1;
+  }
+
+  .feature__price {
+    margin-left: 70px;
+    padding-top: 130px;
+  }
+
+  .feature__button {
+    padding: 16px 86px;
+    margin-left: 0;
+  }
 }
