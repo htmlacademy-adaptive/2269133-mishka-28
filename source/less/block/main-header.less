@@ -1,9 +1,13 @@
 .main-header {
-  background-image: url("../img/hero-index.jpg");
+  background-image: url("../../img/hero-mobile.jpg");
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: inherit;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/hero-desktop@2x.jpg");
+  }
 }
 
 .main-header__title {
@@ -67,8 +71,14 @@
 
 @media (min-width: @tablet-width) {
   .main-header {
+    background-image: url("../../img/hero-desktop.jpg");
     min-width: 768px;
     height: 746px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .main-header__title {
