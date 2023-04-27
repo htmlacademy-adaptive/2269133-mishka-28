@@ -6,6 +6,10 @@
   <title>Главная страница: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon-152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-icon-152x152.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -15,8 +19,12 @@
 
     <!-- Логотип "Мишек" в навигации -->
     <a class="header__logo logo logo--header" href="#">
-      <img class="logo__logo-navigation" src="img/mishka-logo-header-mobile.svg" width="86px" height="35px"
-        alt="Логотип в навигации">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/mishka-logo-header-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/mishka-logo-header-tablet.svg">
+        <img class="logo__logo-navigation" src="img/mishka-logo-header-mobile.svg" width="86px" height="35px"
+          alt="Логотип в навигации">
+      </picture>
     </a>
 
     <!-- Навигация -->
@@ -84,7 +92,12 @@
         <dt class="feature-options__options">Высота:</dt>
         <dd class="feature-options__parameter">15 см</dd>
       </dl>
-      <img class="feature__image" src="img/foto-triple.jpg" width="260px" height="315px" alt="корзинки вязаные">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/triple-desktop.jpg 1x, img/triple-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/triple-tablet.jpg 1x, img/triple-tablet@2x.jpg 2x">
+        <img class="feature__image" src="img/triple-mobile.jpg" srcset="img/triple-mobile@2x.jpg 2x" width="260px"
+          height="315px" alt="корзинки вязаные">
+      </picture>
       <b class="feature__price">Цена: 990 руб.</b>
       <a class="feature__button button" href="#">заказать</a>
     </section>
