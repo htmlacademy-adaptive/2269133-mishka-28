@@ -5,7 +5,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  background-image: url('../img/zigzag-line.svg');
+  background-image: url("../img/zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
@@ -29,10 +29,6 @@
   padding: @mobile-padding;
   margin: 0;
   margin-top: 3px;
-
-  br {
-    display: none;
-  }
 }
 
 .feature__discription {
@@ -85,15 +81,13 @@
     line-height: 17px;
     padding: 0;
     margin: 0;
-
-    br {
-      display: inline-block;
-    }
+    max-width: 120px;
   }
 
   .feature__discription {
     line-height: 30px;
     margin-top: 37px;
+    max-width: 264px;
   }
 
   .feature__image {
