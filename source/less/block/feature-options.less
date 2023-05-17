@@ -1,6 +1,6 @@
 .feature-options {
   display: grid;
-  grid-template-columns: 97px 162px;
+  grid-template-columns: 1fr 2fr;
   row-gap: 20px;
   line-height: 20px;
   margin: 0;
@@ -18,6 +18,12 @@
   display: inline;
   margin: 0;
   border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: @tablet-width) {
+  .feature-options {
+    width: 45%;
+  }
 }
 
 @media (min-width: @desktop-width) {

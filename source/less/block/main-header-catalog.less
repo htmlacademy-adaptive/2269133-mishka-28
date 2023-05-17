@@ -1,5 +1,4 @@
 .main-header-catalog {
-  height: 177px;
   background-color: @lightgray;
 }
 
@@ -9,5 +8,34 @@
   font-weight: 700;
   text-align: center;
   padding-top: 73px;
+  padding-bottom: 73px;
   margin: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .main-header-catalog {
+    background-image: url("../img/zigzag-wave-white.svg");
+    width: 100%;
+    height: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+  }
+
+  .main-header-catalog__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 100px;
+    padding-bottom: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header-catalog__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+}
+
