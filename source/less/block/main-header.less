@@ -1,12 +1,17 @@
 .main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url("../img/hero-mobile.jpg");
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/hero-desktop@2x.jpg");
+@media (min-resolution: 2dppx) {
+  .main-header {
+  background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
 
@@ -19,7 +24,6 @@
   margin: 0;
   padding: @mobile-padding;
   padding-top: 90px;
-  margin-bottom: 120px;
 }
 
 .main-header__wrapper {
@@ -35,22 +39,38 @@
   text-decoration: none;
   padding: @mobile-padding;
   padding-top: 24px;
-  padding-right: 290px;
+  padding-right: 180px;
 
   &--left {
-    height: 103px;
+    min-height: 103px;
     background-color: #63d1bb;
     background-image: url("../img/interior-lamp.svg");
     background-repeat: no-repeat;
     background-position: right 36px bottom 18px;
+
+    &:hover {
+      background-color: #59D5BC;
+    }
+
+    &:active {
+      background-color: #59D5BC;
+    }
   }
 
   &--right {
-    height: 103px;
+    min-height: 103px;
     background-color: #56c3b2;
     background-image: url("../img/lego-cube.svg");
     background-repeat: no-repeat;
     background-position: right 27px bottom 22px;
+
+    &:hover {
+      background-color: #46C1AE;
+    }
+
+    &:active {
+      background-color: #46C1AE;
+    }
   }
 }
 
@@ -70,13 +90,15 @@
   .main-header {
     background-image: url("../img/hero-desktop.jpg");
     min-width: 768px;
-    height: 746px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-desktop@2x.jpg");
-      background-size: 1150px auto;
-    }
+    min-height: 746px;
   }
+
+  // @media (min-width: @tablet-width & min-resolution: 2dppx) {
+  //   .main-header {
+  //     background-image: url("../img/hero-desktop@2x.jpg");
+  //     background-size: 1150px auto;
+  //   }
+  // }
 
   .main-header__title {
     font-size: 43px;
@@ -95,7 +117,7 @@
   .main-header__sorting {
     font-size: 20px;
     line-height: 30px;
-    padding-right: 420px;
+    padding-right: 278px;
   }
 
   .main-header__wave-zigzag {
@@ -103,7 +125,7 @@
     background-image: url("../img/zigzag-wave-white.svg");
     width: 100%;
     height: 100%;
-    background-position: center bottom -17px;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1;

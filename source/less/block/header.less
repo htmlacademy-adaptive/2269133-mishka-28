@@ -11,6 +11,14 @@
 
 .logo__logo-navigation {
   margin: 22px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -22,13 +30,24 @@
   .header__logo {
     position: absolute;
     left: 48px;
+    z-index: 1;
   }
 
+  .logo__logo-navigation {
+    width: 113px;
+    height: 46px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .header__logo {
     left: 45%;
     top: 0%;
+  }
+
+  .logo__logo-navigation {
+    width: 149px;
+    height: 72px;
+    margin: 5px;
   }
 }
