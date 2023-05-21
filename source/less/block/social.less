@@ -2,14 +2,29 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 45px;
 }
 
 .social__svg {
+  margin-top: 30px;
+  margin-bottom: 32px;
+
   &:hover {
-    fill: #46C1AE;
+    fill: #46c1ae;
   }
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    border: none;
+  }
+
+  .social__svg {
+    margin-right: 45px;
   }
 }

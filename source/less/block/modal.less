@@ -1,0 +1,123 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.9);
+}
+
+.modal__close {
+  display: none;
+}
+
+.modal__window {
+  position: relative;
+  margin: auto;
+  padding: 28px 30px 46px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.modal__add-basket {
+  width: 320px;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0 70px 0 74px;
+  font-family: @fontfamily;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal_text {
+  margin: 0;
+  padding: 0 79px 21px;
+  font-family: @fontfamily;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #444444;
+  text-align: center;
+}
+
+.modal__size {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 21px;
+}
+
+.modal__size-button {
+  font-family: @fontfamily;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  padding: 18px 5px;
+  width: 82px;
+  text-decoration: none;
+  color: @grey;
+  text-transform: uppercase;
+
+  &:hover {
+    border: 2px solid #63D1BB;
+  }
+
+  &:active {
+    border: 2px solid #63D1BB;
+  }
+}
+
+.modal__button {
+  display: block;
+  font-family: @fontfamily;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  background-color: #63d1bb;
+  padding: 18px 68px;
+  text-decoration: none;
+  color: @white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 31px;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal__window {
+    padding: 0;
+  }
+
+  .modal__add-basket {
+    width: 566px;
+  }
+
+  .modal__title {
+    margin-top: 37px;
+  }
+
+  .modal__size {
+    padding: 0 108px;
+  }
+
+  .modal__button {
+    margin: 31px 108px 46px;
+  }
+}

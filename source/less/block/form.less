@@ -1,12 +1,104 @@
 .form__group {
   display: grid;
-  grid-template-columns: 42px 1fr;
+  grid-template-columns: 1fr;
   row-gap: 10px;
-  position: relative;
   border: none;
   margin: 0;
   padding: 0;
   margin-bottom: 32px;
+}
+
+.form__container {
+  position: relative;
+  text-align: center;
+  padding-top: 14px;
+  margin: 30px 0;
+}
+
+.form__radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form__button:hover + span {
+  border-color: #62d1ba;
+}
+
+.form__button:active + span {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.form__button[type="radio"] + .form__radio {
+  border-radius: 50%;
+}
+
+.form__button[type="radio"]:checked + .form__radio::before {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  background-color: #62d1ba;
+  border-radius: 50%;
+  content: "";
+}
+
+.form__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.form__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #444444;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form__button:hover + span {
+  border-color: #62d1ba;
+}
+
+.form__button:active + span {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.form__button[type="checkbox"]:checked + .form__checkbox::before {
+  position: absolute;
+  top: 11px;
+  left: 7px;
+  width: 23px;
+  height: 16px;
+  background-image: url(../img/tick.svg);
+  content: "";
 }
 
 .form__group-input {
@@ -33,56 +125,98 @@
   border: none;
   padding: 16px 8px 17px 0;
   border-bottom: 2px solid @grey;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border: none;
+    border-bottom: 2px solid #62d1ba;
+  }
+}
+
+.form__group-phone {
+  position: relative;
+}
+
+.form__input-phone {
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+  fill: rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    fill: #62d1ba;
+  }
+
+  &:active {
+    fill: #62d1ba;
+  }
+}
+
+.form__group-mail {
+  position: relative;
+}
+
+.form__input-mail {
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+  fill: rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    fill: #62d1ba;
+  }
+
+  &:active {
+    fill: #62d1ba;
+  }
+}
+
+.form__comment {
+  font-family: @fontfamily;
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
+  }
+}
+
+.form__order {
+  padding: 18px 37px;
 }
 
 .form__text {
   font-size: 14px;
   font-weight: 400;
-}
-
-.form__button {
-  display: block;
-  padding: 18px 37px;
-  margin: 0;
-}
-
-.form__label {
-  margin-left: 19px;
-}
-
-.form__wrapper {
-  display: grid;
-  grid-template-columns: 42px 1fr;
-  row-gap: 10px;
-  border: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 32px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: @tablet-width) {
   .form__group {
-    display: grid;
-    grid-template-columns: 100px 1fr;
     padding-left: 217px;
+    margin-bottom: 100px;
+  }
+
+  .form__container {
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   .form__title {
     position: absolute;
-    left: 0;
-    top: -25px;
+    left: 50px;
   }
 
   .form__wrapper {
     display: grid;
-    grid-template-columns: 52px 1fr 52px 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 10px;
     border: none;
-  }
-
-  .form__group-sorting {
-    display: grid;
-    grid-template-columns: 1fr;
   }
 
   .form__cover {
@@ -94,6 +228,10 @@
     order: 1;
     align-self: center;
   }
+
+  .form__order {
+    padding: 18px 32px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -103,7 +241,7 @@
 
   .form__wrapper {
     display: grid;
-    grid-template-columns: 52px 1fr 52px 1fr 52px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10px;
     border: none;
   }
@@ -111,6 +249,8 @@
   .form__cover {
     padding: 0 225px;
   }
+
+  .form__order {
+    padding: 18px 17px;
+  }
 }
-
-
