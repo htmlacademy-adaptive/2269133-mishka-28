@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Форма заказа вязания на заказ: Мишка</title>
-  <link rel="stylesheet" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="js/script.js" as="script">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -110,11 +110,13 @@
       <h2 class="form-order__title visually-hidden">Форма заказа вязания на заказ</h2>
       <p class="form-order__discription">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
         простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form-order__form form" action="" method="get">
+      <form class="form-order__form form" action="catalog.html" method="get">
 
         <!-- Заказ по типу -->
         <fieldset class="form__group">
-          <legend class="form__title">тип</legend>
+          <legend class="form__title">
+            <span class="form__before">тип</span>
+          </legend>
           <div class="form__container">
             <input class="form__button visually-hidden" type="radio" name="radio-button" id="interior-accessory"
               checked>
@@ -130,7 +132,9 @@
 
         <!-- Заказ по цвету -->
         <fieldset class="form__group form__group-color">
-          <legend class="form__title form__title-color">цвет</legend>
+          <legend class="form__title form__title-color">
+            <span class="form__before form__before--color">цвет</span>
+          </legend>
           <div class="form__wrapper">
             <div class="form__container form__color">
               <input class="form__button visually-hidden" type="checkbox" name="radio-button" id="color-white" checked>
@@ -167,7 +171,9 @@
 
         <!-- ФИО -->
         <fieldset class="form__group form__group-input">
-          <legend class="form__title form__title-fio">фио</legend>
+          <legend class="form__title form__title-fio">
+            <span class="form__before">фио</span>
+          </legend>
           <label class="form__value" for="form-group-name">Имя:</label>
           <input class="form__input form__input-long" placeholder="Введите ваше имя*" type="text" name="form-group-name"
             id="form-group-name" required>
@@ -181,7 +187,9 @@
 
         <!-- Телефон -->
         <fieldset class="form__group form__group-input form__group-phone">
-          <label class="form__title form__title-tel" for="form-group-phone">тел</label>
+          <label class="form__title form__title-tel" for="form-group-phone">
+            <span class="form__before">тел</span>
+          </label>
           <input class="form__input form__input-tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="form-group-phone"
             id="form-group-phone" required>
           <svg class="form__input-phone" width="25" height="24">
@@ -191,7 +199,9 @@
 
         <!-- E-mail -->
         <fieldset class="form__group form__group-input form__group-mail">
-          <label class="form__title form__title-email" for="form-group-email">e-mail</label>
+          <label class="form__title form__title-email" for="form-group-email">
+            <span class="form__before">e-mail</span>
+          </label>
           <input class="form__input form__input-email" placeholder="Ваш Email*" type="email" name="form-group-email"
             id="form-group-email" required>
           <svg class="form__input-mail" width="32" height="21">
@@ -201,7 +211,9 @@
 
         <!-- Дополнения -->
         <fieldset class="form__group form__group-input form__group-comment">
-          <legend class="form__title form__title-add">доп</legend>
+          <legend class="form__title form__title-add">
+            <span class="form__before">доп</span>
+          </legend>
           <label class="form__value visually-hidden" for="form-group-wishes">Дополнения</label>
           <textarea class="form__comment" placeholder="Опишите все ваши пожелания к заказу" name="form-group-wishes"
             id="form-group-wishes" rows="6" wrap="soft" required></textarea>
@@ -246,7 +258,7 @@
 
     <!-- Социальные сети -->
     <section class="social">
-      <h3 class="social__tiile visually-hidden"></h3>
+      <h3 class="social__tiile visually-hidden">Логотип академии</h3>
       <a class="social__item social__item--vk" href="#">
         <svg class="social__svg" width="27" height="18">
           <use xlink:href="#social-vk"></use>
