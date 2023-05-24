@@ -3,26 +3,41 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  padding: @mobile-padding;
+  padding: 0 31px;
+  padding-bottom: 55px;
+
+  background-image: url("../img/zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom 5px;
+  background-size: 100%;
 }
 
 .reviews__title {
   font-size: 25px;
   font-weight: 700;
+  margin: 0;
 }
 
 .reviews__item {
   margin: 0;
 }
 
+.reviews__text {
+  margin-bottom: 33px;
+}
+
 .reviews__autor-name {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 3px;
 }
 
 .reviews__autor-nickname {
   font-size: 17px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .reviews__prev {
@@ -30,7 +45,7 @@
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #ececec;
-  padding: 13px 42px 13px 38px;
+  padding: 14px 85px 15px 43px;
 
   &:hover {
     opacity: 0.6;
@@ -46,7 +61,7 @@
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #ececec;
-  padding: 13px 42px 13px 38px;
+  padding: 14px 85px 15px 43px;
 
   &:hover {
     opacity: 0.6;
@@ -59,8 +74,8 @@
 
 .reviews__button {
   display: inline-block;
-  padding: 16px 65px;
-  margin: 38px 12px 45px;
+  padding: 14px 78px;
+  margin-top: 50px;
 }
 
 @media (min-width: @tablet-width) {
@@ -71,12 +86,22 @@
     padding-bottom: 68px;
     background-image: url("../img/review-napkin.jpg");
     background-repeat: no-repeat;
+    background-position: left top 24px;
+    background-size: auto;
   }
 
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 80px;
+    padding-top: 107px;
+  }
+
+  .reviews__list {
+    margin-top: 38px;
+  }
+
+  .reviews__text {
+    margin-bottom: 61px;
   }
 
   .reviews__autor-name {
@@ -85,28 +110,55 @@
 
   .reviews-arrow {
     position: absolute;
-    right: 60px;
-    bottom: 50px;
+    right: 50px;
+    bottom: 120px;
+  }
+
+  .reviews__prev {
+    border: none;
+    padding: 14px 43px 14px 44px;
+  }
+
+  .reviews__next {
+    border: none;
+    padding: 14px 43px 14px 44px;
   }
 
   .reviews__button {
+    font-size: 17px;
     position: absolute;
-    right: 60px;
-    top: 45px;
+    right: 50px;
+    top: 53px;
+    padding: 14px 38px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews {
-    padding-left: 250px;
+    padding-left: 225px;
+    padding-bottom: 115px;
+    background-position: left 50px top 24px;
   }
 
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
+    padding-top: 102px;
+  }
+
+  .reviews__list {
+    margin-top: 35px;
+  }
+
+  .reviews__text {
+    margin-bottom: 45px;
   }
 
   .reviews__autor-name {
     font-size: 17px;
+  }
+
+  .reviews-arrow {
+    bottom: 169px;
   }
 }

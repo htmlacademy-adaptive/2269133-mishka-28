@@ -6,15 +6,24 @@
   .footer-logo {
     display: inline-block;
     align-self: center;
+    margin-right: 97px;
   }
 
   .footer-logo__logo {
+    fill: #000000;
+
     &:hover {
-      fill: #46C1AE;
+      fill: #46c1ae;
     }
 
     &:active {
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-logo {
+    margin-right: 287px;
   }
 }

@@ -7,8 +7,8 @@
 
   background-image: url("../img/zigzag-line.svg");
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: contain;
+  background-position: bottom;
+  background-size: 100%;
 }
 
 .feature__title {
@@ -35,12 +35,12 @@
   margin: 0;
   margin-top: 18px;
   padding: @mobile-padding;
+  padding-right: 31px;
 }
 
 .feature__image {
   display: block;
-  padding: @mobile-padding;
-  padding-top: 28px;
+  padding: 29px 34px 0 30px;
   width: 100%;
   height: auto;
   box-sizing: border-box;
@@ -51,15 +51,14 @@
   font-size: 17px;
   font-weight: 700;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 26px;
 }
 
 .feature__button {
   display: inline-block;
-  padding: 16px 80px;
-  margin: 25px 30px 36px;
-  width: 90%;
-  text-align: center;
+  padding: 15px 80px;
+  margin: 24px 31px 40px;
+  width: 81%;
   box-sizing: border-box;
 }
 
@@ -70,9 +69,7 @@
 
 @media (min-width: @tablet-width) {
   .feature {
-    padding: @tablet-padding;
-    padding-top: 40px;
-    padding-bottom: 52px;
+    padding: 52px 20px 27px;
   }
 
   .feature__title {
@@ -88,18 +85,21 @@
     padding: 0;
     margin: 0;
     max-width: 120px;
+    text-align: center;
+    padding-left: 88px;
   }
 
   .feature__discription {
+    font-size: 17px;
     line-height: 30px;
-    margin-top: 37px;
-    max-width: 264px;
+    margin-top: 38px;
+    max-width: 287px;
   }
 
   .feature__image {
     position: absolute;
     right: 0;
-    top: 135px;
+    top: 152px;
     width: 334px;
     height: 404px;
     padding: @tablet-padding;
@@ -107,23 +107,27 @@
   }
 
   .feature__price {
+    font-size: 20px;
     text-align: start;
-    margin-left: 95px;
-    padding-top: 57px;
+    margin-left: 101px;
+    padding-top: 58px;
     padding-bottom: 15px;
   }
 
   .feature__button {
+    font-size: 17px;
     width: auto;
+    padding: 14px 99px;
+    margin-top: 18px;
   }
-
 }
 
 @media (min-width: @desktop-width) {
   .feature {
     padding: 0 225px;
-    padding-top: 110px;
+    padding-top: 132px;
     padding-bottom: 73px;
+    background-size: 91.5%;
   }
 
   .feature__title {
@@ -134,27 +138,30 @@
 
   .feature__subtitle {
     position: absolute;
-    left: 60px;
-    top: 120px;
+    left: -16px;
+    top: 140px;
   }
 
   .feature__discription {
     padding: 0;
+    margin-top: 36px;
   }
 
   .feature__image {
     width: 525px;
     height: 636px;
     z-index: -1;
+    top: 72px;
   }
 
   .feature__price {
-    margin-left: 70px;
-    padding-top: 130px;
+    margin-left: 73px;
+    padding-top: 110px;
   }
 
   .feature__button {
-    padding: 16px 86px;
+    padding: 14px 99px;
     margin-left: 0;
+    margin-bottom: 21px;
   }
 }
