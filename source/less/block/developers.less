@@ -1,6 +1,6 @@
 .developers {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-family: @fontfamily;
 }
@@ -9,16 +9,30 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
+  margin-top: 28px;
+  margin-right: 27px;
 }
 
 .developers__logo {
-  fill: #63d1bb;
+  color: #63d1bb;
+  margin-top: 15px;
 
   &:hover {
-    fill: #46c1ae;
+    color: #46c1ae;
   }
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .developers__title {
+    margin-top: 12px;
+    margin-right: 26px;
+  }
+
+  .developers__logo {
+    margin-top: -1px;
   }
 }

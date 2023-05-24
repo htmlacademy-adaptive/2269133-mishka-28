@@ -1,7 +1,7 @@
 .feature-options {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  row-gap: 20px;
+  grid-template-columns: 98px 2fr;
+  row-gap: 8px;
   line-height: 20px;
   margin: 0;
   margin-top: 28px;
@@ -11,7 +11,7 @@
 .feature-options__options {
   display: inline;
   border-bottom: 1px solid #ececec;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
 }
 
 .feature-options__parameter {
@@ -22,12 +22,20 @@
 
 @media (min-width: @tablet-width) {
   .feature-options {
-    width: 45%;
+    width: 40%;
+    margin-top: 47px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .feature-options {
+    width: 42%;
     padding: 0;
+    margin-top: 60px;
+    row-gap: 6px;
+  }
+
+  .feature-options__options {
+    padding-bottom: 13px;
   }
 }
