@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Главная страница: Мишка</title>
-  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon-152.svg" type="image/svg+xml">
@@ -15,7 +17,7 @@
 <body>
 
   <!-- Спрайты -->
-  <svg style="display: none;">
+  <!-- <svg style="display: none;">
     <symbol viewBox="0 0 18 18" id="icon-search">
       <path
         d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" />
@@ -36,7 +38,7 @@
       <path
         d="M19.4608 0.652905C19.6393 0.802216 19.7255 1.0349 19.6872 1.26448L17.0611 17.0214C17.0244 17.2411 16.8789 17.4273 16.6745 17.5159C16.47 17.6045 16.2346 17.5833 16.0493 17.4597L8.17082 12.2074C8.01771 12.1054 7.91447 11.9437 7.88624 11.7619C7.858 11.58 7.90738 11.3947 8.02233 11.251L10.633 7.98773L6.27303 10.8944C6.077 11.025 5.82597 11.0407 5.61524 10.9353L0.362931 8.30915C0.127693 8.19153 -0.0146529 7.94488 0.00119976 7.68235C0.0170525 7.41983 0.188044 7.1921 0.435726 7.10364L18.8188 0.538258C19.038 0.459976 19.2822 0.503595 19.4608 0.652905ZM2.32626 7.82275L5.86168 9.59046L13.4231 4.5495C13.6925 4.36994 14.0525 4.41349 14.2712 4.6521C14.49 4.8907 14.5022 5.25314 14.3 5.50591L9.49502 11.5121L15.9328 15.8039L18.2083 2.15058L2.32626 7.82275Z" />
     </symbol>
-  </svg>
+  </svg> -->
 
   <!-- Хедер -->
   <header class="header">
@@ -66,7 +68,7 @@
         href="#">Распродажа</a>
       <a class="header-navigation__link header-navigation__link--search" href="#">
         <svg class="header-navigation__icon-search" width="18" height="18">
-          <use xlink:href="#icon-search"></use>
+          <use xlink:href="img/sprite.svg#icon-search"></use>
         </svg>
         <span class="header-navigation__search">Поиск по сайту</span>
       </a>
