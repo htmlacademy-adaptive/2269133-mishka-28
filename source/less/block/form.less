@@ -12,6 +12,7 @@
   text-align: center;
   padding: 3px 45px 3px 60px;
   text-align: left;
+  max-width: 200px;
 }
 
 .form__container-down {
@@ -23,6 +24,10 @@
   padding: 11px 45px 22px 61px;
 }
 
+.form__label {
+  cursor: pointer;
+}
+
 .form__radio {
   position: absolute;
   top: 0;
@@ -32,7 +37,8 @@
   border: 2px solid #444444;
   border-radius: 50%;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: #62d1ba;
   }
 
@@ -41,7 +47,8 @@
   }
 }
 
-.form__button:hover + span {
+.form__button:hover + span,
+.form__button:focus + label > span {
   border-color: #62d1ba;
 }
 
@@ -49,14 +56,11 @@
   border-color: rgba(0, 0, 0, 0.3);
 }
 
-.form__button[type="radio"] + .form__radio {
-  border-radius: 50%;
-}
-
-.form__button[type="radio"]:checked + .form__radio::before {
+.form__button[type="radio"]:checked + .form__label > .form__radio::before {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 15px;
   height: 15px;
   background-color: #62d1ba;
@@ -81,7 +85,8 @@
   height: 34px;
   border: 2px solid #444444;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: #62d1ba;
   }
 
@@ -90,18 +95,11 @@
   }
 }
 
-.form__button:hover + span {
-  border-color: #62d1ba;
-}
-
-.form__button:active + span {
-  border-color: rgba(0, 0, 0, 0.3);
-}
-
-.form__button[type="checkbox"]:checked + .form__checkbox::before {
+.form__button[type="checkbox"]:checked + .form__label > .form__checkbox::before {
   position: absolute;
-  top: 10px;
-  left: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 23px;
   height: 16px;
   background-image: url(../img/tick.svg);
@@ -140,7 +138,7 @@
 }
 
 .form__before {
-  background-color: transparent;
+  background-color: #ffffff;
   padding-left: 30px;
   padding-right: 30px;
   margin-left: -30px;
@@ -295,8 +293,12 @@
     margin-right: -50px;
   }
 
-  .form__before--color {
-    background-color: #f1f1f1;
+  .form__group-fio {
+    max-width: 830px;
+  }
+
+  .form__before {
+    background-color: transparent;
   }
 
   .form__group-phone {
@@ -306,6 +308,7 @@
     margin-left: -50px;
     margin-right: -50px;
     padding-left: 217px;
+    padding-right: 50px;
   }
 
   .form__group-mail {
@@ -315,6 +318,7 @@
     margin-left: -50px;
     margin-right: -50px;
     padding-left: 217px;
+    padding-right: 50px;
   }
 
   .form__group-comment {
@@ -328,11 +332,19 @@
     line-height: 18px;
     padding: 14px 14px 12px 19px;
     min-width: 275px;
-    max-width: 450px;
+    flex-basis: 67%;
   }
 
-  .form__input-long {
+  .form__input--long {
     padding: 0 35px 11px 19px;
+    min-width: 359px;
+    flex-grow: 1;
+    flex-basis: 74%;
+  }
+
+  .form__button[type="radio"]:checked + .form__label > .form__radio::before {
+    width: 22px;
+    height: 22px;
   }
 
   .form__input-tel {
@@ -355,6 +367,7 @@
     margin-bottom: 30px;
     padding-left: 77px;
     padding-top: 14px;
+    max-width: 280px;
   }
 
   .form__title {
@@ -478,21 +491,21 @@
   .form__group-color {
     padding-top: 47px;
     padding-bottom: 39px;
+    padding-left: 225px;
   }
 
   .form__group-input {
     padding-top: 63px;
     padding-bottom: 38px;
+    padding-right: 207px;
   }
 
   .form__group-phone {
-    padding-top: 49px;
-    padding-bottom: 0;
+    padding: 49px 255px 0 225px;
   }
 
   .form__group-mail {
-    padding-top: 9px;
-    padding-bottom: 39px;
+    padding: 9px 255px 39px 225px;
   }
 
   .form__group-comment {
@@ -506,10 +519,19 @@
 
   .form__title-color {
     top: 50px;
+    left: 112px;
   }
 
   .form__title-fio {
     top: 66px;
+  }
+
+  .form__title-tel {
+    left: 112px;
+  }
+
+  .form__title-email {
+    left: 112px;
   }
 
   .form__title-add {
@@ -521,7 +543,7 @@
     padding: 14px 33px 12px 19px;
   }
 
-  .form__input-long {
+  .form__input--long {
     padding: 0 35px 11px 19px;
   }
 

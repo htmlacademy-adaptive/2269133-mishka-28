@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="js/script.js" as="script">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon-152.svg" type="image/svg+xml">
@@ -70,7 +71,7 @@
     </a>
 
     <!-- Навигация -->
-    <nav class="header-navigation">
+    <nav class="header-navigation header-navigation--closed header-navigation--nojs">
       <div class="header-navigation__wrapper header-navigation__wrapper--open header-navigation__wrapper--nojs">
         <button class="header-navigation__button" type="button"></button>
       </div>
@@ -100,7 +101,7 @@
     </nav>
   </header>
   <!-- Оглавление -->
-  <main class="main main-form">
+  <main class="main">
     <section class="main-header-form">
       <h1 class="main-header-form__title">Вязание на заказ</h1>
     </section>
@@ -120,13 +121,17 @@
           <div class="form__container">
             <input class="form__button visually-hidden" type="radio" name="radio-button" id="interior-accessory"
               checked>
-            <span class="form__radio"></span>
-            <label class="form__label" for="interior-accessory">Аксессуар для интерьера</label>
+            <label class="form__label" for="interior-accessory">
+              <span class="form__radio"></span>
+              Аксессуар для интерьера
+            </label>
           </div>
           <div class="form__container form__container-down">
             <input class="form__button visually-hidden" type="radio" name="radio-button" id="children-toy">
-            <span class="form__radio"></span>
-            <label class="form__label" for="children-toy">Детская игрушка</label>
+            <label class="form__label" for="children-toy">
+              <span class="form__radio"></span>
+              Детская игрушка
+            </label>
           </div>
         </fieldset>
 
@@ -138,48 +143,60 @@
           <div class="form__wrapper">
             <div class="form__container form__color">
               <input class="form__button visually-hidden" type="checkbox" name="radio-button" id="color-white" checked>
-              <span class="form__checkbox"></span>
-              <label class="form__label" for="color-white">Белый</label>
+              <label class="form__label" for="color-white">
+                <span class="form__checkbox"></span>
+                Белый
+              </label>
             </div>
             <div class="form__container form__color">
               <input class="form__button visually-hidden" type="checkbox" name="radio-button" id="color-grey" checked>
-              <span class="form__checkbox"></span>
-              <label class="form__label" for="color-grey">Серый</label>
+              <label class="form__label" for="color-grey">
+                <span class="form__checkbox"></span>
+                Серый
+              </label>
             </div>
             <div class="form__container form__color">
               <input class="form__button visually-hidden" type="checkbox" name="radio-button" id="color-tiffany">
-              <span class="form__checkbox"></span>
-              <label class="form__label" for="color-tiffany">Тиффани</label>
+              <label class="form__label" for="color-tiffany">
+                <span class="form__checkbox"></span>
+                Тиффани
+              </label>
             </div>
             <div class="form__container form__color">
               <input class="form__button visually-hidden" type="checkbox" name="radio-button" id="color-black">
-              <span class="form__checkbox"></span>
-              <label class="form__label" for="color-black">Черный</label>
+              <label class="form__label" for="color-black">
+                <span class="form__checkbox"></span>
+                Черный
+              </label>
             </div>
             <div class="form__container form__color">
               <input class="form__button visually-hidden" type="checkbox" name="radio-button" id="color-pink">
-              <span class="form__checkbox"></span>
-              <label class="form__label" for="color-pink">Розовый</label>
+              <label class="form__label" for="color-pink">
+                <span class="form__checkbox"></span>
+                Розовый
+              </label>
             </div>
             <div class="form__container form__color">
               <input class="form__button visually-hidden" type="checkbox" name="radio-button" id="color-orange">
-              <span class="form__checkbox"></span>
-              <label class="form__label" for="color-orange">Оранжевый</label>
+              <label class="form__label" for="color-orange">
+                <span class="form__checkbox"></span>
+                Оранжевый
+              </label>
             </div>
           </div>
         </fieldset>
 
         <!-- ФИО -->
-        <fieldset class="form__group form__group-input">
+        <fieldset class="form__group form__group-input form__group-fio">
           <legend class="form__title form__title-fio">
             <span class="form__before">фио</span>
           </legend>
           <label class="form__value" for="form-group-name">Имя:</label>
-          <input class="form__input form__input-long" placeholder="Введите ваше имя*" type="text" name="form-group-name"
-            id="form-group-name" required>
+          <input class="form__input form__input--long" placeholder="Введите ваше имя*" type="text"
+            name="form-group-name" id="form-group-name" required>
           <label class="form__value form__value-fio" for="form-group-surname">Фамилия:</label>
-          <input class="form__input" placeholder="Укажите фамилию*" type="text" name="form-group-surname"
-            id="form-group-surname" required>
+          <input class="form__input form__input--center" placeholder="Укажите фамилию*" type="text"
+            name="form-group-surname" id="form-group-surname" required>
           <label class="form__value form__value-fio" for="form-group-patronymic">Отчество:</label>
           <input class="form__input" placeholder="Отчество, если желаете" type="text" name="form-group-patronymic"
             id="form-group-patronymic">
@@ -290,7 +307,7 @@
     </section>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
